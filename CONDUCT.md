@@ -161,4 +161,4 @@ Respect is important, listening and engaging with each other's thoughts and idea
 As long as feedback is respectful and constructive it is encouraged.
 
 
-![Alt Text](src/zach_signature)
+![Zach's Signature](src/zach_signature)
