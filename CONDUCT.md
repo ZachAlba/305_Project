@@ -163,3 +163,4 @@ As long as feedback is respectful and constructive it is encouraged.
 
 ![Zach's Signature](src/zach_signature)
 ![Alex's Signature](src/Baez_Signature.png)
+![Mike's Signature](src/Signature.png)
