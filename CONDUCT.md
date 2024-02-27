@@ -159,3 +159,6 @@ Respect is important, listening and engaging with each other's thoughts and idea
 
 ## Enforcement/ Feedback 
 As long as feedback is respectful and constructive it is encouraged.
+
+
+![Alt Text](src/zach_signature)
