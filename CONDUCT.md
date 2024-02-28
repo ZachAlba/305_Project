@@ -162,6 +162,7 @@ As long as feedback is respectful and constructive it is encouraged.
 
 
 ![Zach's Signature](src/zach_signature.jpg)
+
 ![Alex's Signature](src/Baez_Signature.png)
 
 ![Isis's Signature](src/isis_signature.jpg)
