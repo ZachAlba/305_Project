@@ -143,7 +143,7 @@ No make up work, we will send the meeting minutes.
 We will decide what needs to be done for the week each Monday. As long as the member communicates and comes up with a plan to complete the assignment it's fine, it also must not become a habit. For poorly done assignments we will provide feedback and maybe two people can work together to meet the group standards.
 
 ## Participation 
-We plan out our goals every Monday. We can elect which part of the assignment we will work on. Updates on the progress during Thursday class meetings. 
+We plan out our goals every Monday. We can elect which part of the assignment we will work on. Updates on the progress during Thursday class meetings. No phones allowed to ensure everyone is focused on the project.
 
 ## Meeting Times and Locations/Mediums 
 We will meet Mondays from 8-9 on Zoom
