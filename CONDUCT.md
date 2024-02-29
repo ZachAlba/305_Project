@@ -169,3 +169,5 @@ As long as feedback is respectful and constructive it is encouraged.
 
 ![Mike's Signature](src/Signature.png)
 
+![Christine's Signature](src/christine_signature.jpg)
+
