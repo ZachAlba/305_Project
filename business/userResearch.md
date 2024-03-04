@@ -7,6 +7,9 @@
 - [Observation 1](#observation-1)
 - [Observation 2](#observation-2)
 - [Observation 3](#observation-3)
+- [Observation 4](#observation-4)
+- [Observation 5](#observation-5)
+
 
 ## Observation 1
 
