@@ -22,6 +22,7 @@ We plan out our goals every Monday. We can elect which part of the assignment we
 We will meet Mondays from 8-9 on Zoom
 
 **Agenda and Minutes /Notes**
+
 Minutes will be done on a Google doc. We will rotate who writes them each week.
 
 **Promptness**
