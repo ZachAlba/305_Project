@@ -41,9 +41,12 @@ Document describing our findings from our user research survey.
 
 ## Observation 2
 
-- Observation Statement:
+- Observation Statement: 
+    A potential user mentioned that they would like to see a currently listened to feature.
 - Supporting Data:
-- Team Action (if any):
+    A large percentage of people ranked wanting to connect with friends on this app as a 5. By adding this feature we would be able to create a way for people to easily share music with friends.
+- Team Action (if any): 
+    We can add a currently listened to feature or maybe add something called last played so users can see the most recent song their friends have heard. 
 
 ## Observation 3
 
