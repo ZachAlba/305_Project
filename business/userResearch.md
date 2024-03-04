@@ -11,7 +11,6 @@ Document describing our findings from our user research survey.
 - [Observation 4](#observation-4)
 - [Observation 5](#observation-5)
 
-
 ## Observation 1
 
 - Observation Statement:
@@ -73,7 +72,10 @@ Consider conducting further research or a follow-up survey to identify specific 
 
 ## Observation 5
 
-- Observation Statement:
-- Supporting Data:
-- Team Action (if any):
+- Observation Statement: Be able to connect with people that have the same music taste as them
 
+- Supporting Data: In our user survey's there was a portion of people who would like a feature that makes let them know how much in common is their music taste with someone's else. 
+
+- Team Action (if any): Brainstorm an algorithm that checks for artist or songs in common between user and shows a percentage to the user of how much in common.  Due to time , this is not our priority. 
+
+ 
