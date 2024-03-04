@@ -59,8 +59,17 @@ Document describing our findings from our user research survey.
 ## Observation 4
 
 - Observation Statement:
+Participants generally show positive attitudes towards connecting with friends on a music-based social app, as indicated by the majority of responses being favorable. There is also a notable interest in engaging in activities such as rating, reviewing, and ranking albums, although this interest varies among respondents.
+
 - Supporting Data:
+The responses to "How do you feel about being able to connect with your friends on a music-based social app?" are predominantly positive, with many respondents rating their enthusiasm at 4 out of a 5-point scale.
+Engagement levels for rating, reviewing, and ranking albums show a mix of interest levels, with several respondents indicating a high likelihood (rating of 4 on a scale of 1 to 5) of participating in such activities.
+
 - Team Action (if any):
+Given the positive reception to the idea of connecting with friends and engaging with content on a music-based social app, the we should:
+
+Implement and promote a user-friendly interface for rating, reviewing, and ranking albums to encourage active participation from users, considering that there's a good level of interest in these activities.
+Consider conducting further research or a follow-up survey to identify specific features or improvements that can enhance user engagement and satisfaction, particularly among those who expressed lower interest levels or concerns about certain features.
 
 ## Observation 5
 
