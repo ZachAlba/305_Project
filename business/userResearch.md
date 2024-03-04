@@ -1,6 +1,7 @@
 # User Research
 
 ## Introduction
+Document describing our findings from our user research survey.
 
 ## Table of Contents
 
