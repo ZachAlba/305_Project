@@ -1,6 +1,7 @@
 # Code of Conduct
 
 **Decisions**
+
 Everyone takes turns discussing and then will make decisions based on the majority vote.
 
 ## Attendance 
