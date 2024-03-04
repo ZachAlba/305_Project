@@ -43,6 +43,21 @@
 
 ## Observation 3
 
+- Observation Statement: Many different suggestions for new names for the app
+- Supporting Data: In our user survey's there was a large portion who offered alternative names for the
+    application. This suggests that people aren't necessarily convinced that our current name, SoundScribe, is an appropriate name for our application. 
+- Team Action (if any): Brainstorm new name suggestions from users, as well as any new names our group comes 
+    up with to decide if we can come up with a better name, or if we want to keep our current name.
+
+## Observation 4
+
 - Observation Statement:
 - Supporting Data:
 - Team Action (if any):
+
+## Observation 5
+
+- Observation Statement:
+- Supporting Data:
+- Team Action (if any):
+
