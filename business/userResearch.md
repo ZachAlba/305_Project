@@ -67,7 +67,7 @@ Engagement levels for rating, reviewing, and ranking albums show a mix of intere
 - Team Action (if any):
 Given the positive reception to the idea of connecting with friends and engaging with content on a music-based social app, the we should:
 
-Implement and promote a user-friendly interface for rating, reviewing, and ranking albums to encourage active participation from users, considering that there's a good level of interest in these activities.
+-Implement and promote a user-friendly interface for rating, reviewing, and ranking albums to encourage active participation from users, considering that there's a good level of interest in these activities.
 Consider conducting further research or a follow-up survey to identify specific features or improvements that can enhance user engagement and satisfaction, particularly among those who expressed lower interest levels or concerns about certain features.
 
 ## Observation 5
