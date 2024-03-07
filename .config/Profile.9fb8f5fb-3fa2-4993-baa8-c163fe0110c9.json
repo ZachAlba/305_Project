@@ -1,4 +1,5 @@
 {
+    "id": "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -582,7 +583,6 @@
             "name": "logo1"
         }
     ],
-    "id": "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9",
     "thunkableVersion": 447,
     "name": "Profile"
 }
