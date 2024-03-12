@@ -10,7 +10,18 @@
             "assets": {},
             "backendUpgradeVersion": 24,
             "blockly": {
-                "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9": {}
+                "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9": {},
+                "10bf8b67-84a0-40f5-9b19-a927afa077ae": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    },
+                    "enabledFeatures": {
+                        "location": true,
+                        "iap": false
+                    }
+                }
             },
             "categories": [
                 "Music",
@@ -59,7 +70,7 @@
             "projectName": "SoundScribe",
             "settings": {
                 "teamId": null,
-                "appName": null,
+                "appName": "SoundScribe",
                 "icon": null,
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
@@ -68,8 +79,8 @@
                 "androidVersionCode": 1,
                 "iosVersionNumber": "1",
                 "iosBuildNumber": "1",
-                "firebaseAPIKey": null,
-                "firebaseDatabaseURL": null,
+                "firebaseAPIKey": "AIzaSyBeaNjbP0eTB3N4FQ-taOq67gLHo_Fi0HU",
+                "firebaseDatabaseURL": "https://project-4d159-default-rtdb.firebaseio.com",
                 "stripePublishableKeyTest": null,
                 "stripePublishableKeyLive": null,
                 "stripeAccountId": null,
@@ -103,7 +114,7 @@
             },
             "projectSettings": {
                 "teamId": null,
-                "appName": null,
+                "appName": "SoundScribe",
                 "icon": null,
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
@@ -112,8 +123,8 @@
                 "androidVersionCode": 1,
                 "iosVersionNumber": "1",
                 "iosBuildNumber": "1",
-                "firebaseAPIKey": null,
-                "firebaseDatabaseURL": null,
+                "firebaseAPIKey": "AIzaSyBeaNjbP0eTB3N4FQ-taOq67gLHo_Fi0HU",
+                "firebaseDatabaseURL": "https://project-4d159-default-rtdb.firebaseio.com",
                 "stripePublishableKeyTest": null,
                 "stripePublishableKeyLive": null,
                 "stripeAccountId": null,
@@ -157,7 +168,38 @@
             "totalCopy": "0",
             "totalStar": "0",
             "starAction": "star",
-            "variables": {},
+            "variables": {
+                "8c407a4b-a6fc-420b-9f61-31c5e3f2ef5e": {
+                    "scope": "APP",
+                    "name": "SigningUp",
+                    "screenId": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                },
+                "6850eb4a-556d-46a0-b49d-f1ef48535cc5": {
+                    "scope": "STORED",
+                    "name": "email",
+                    "screenId": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                },
+                "e4d2878e-e897-4a57-b443-74e9088bdfe2": {
+                    "scope": "STORED",
+                    "name": "password",
+                    "screenId": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                },
+                "314347fd-a8fb-47e7-8c5d-49192694a2c0": {
+                    "scope": "CLOUD",
+                    "name": "username",
+                    "screenId": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                },
+                "610e2d9c-8d52-46cc-8f76-007a6836b633": {
+                    "scope": "APP",
+                    "name": "session email",
+                    "screenId": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                },
+                "4568c687-3219-4094-a6ac-8414070cb778": {
+                    "scope": "APP",
+                    "name": "user id",
+                    "screenId": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                }
+            },
             "defaultDesignerDevice": "PHONE",
             "defaultDesignerOrientation": "PORTRAIT",
             "schemaVersion": 2,
