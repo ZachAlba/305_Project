@@ -21,6 +21,17 @@
                         "location": true,
                         "iap": false
                     }
+                },
+                "2cf4b839-f1af-41e6-a0e1-a83743384de6": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    },
+                    "enabledFeatures": {
+                        "location": true,
+                        "iap": false
+                    }
                 }
             },
             "categories": [
@@ -49,6 +60,9 @@
                         },
                         "children": [
                             {
+                                "id": "2cf4b839-f1af-41e6-a0e1-a83743384de6"
+                            },
+                            {
                                 "id": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc"
                             },
                             {
@@ -58,9 +72,6 @@
                         "id": "4a8804d5-c5d6-41bc-b078-7115c4decbed",
                         "thunkableVersion": 447,
                         "name": "Bottom_Tab_Navigator1"
-                    },
-                    {
-                        "id": "2cf4b839-f1af-41e6-a0e1-a83743384de6"
                     }
                 ]
             },

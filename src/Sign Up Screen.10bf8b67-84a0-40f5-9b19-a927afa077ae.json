@@ -356,7 +356,7 @@
             "type": "Button",
             "translatedName": "Button",
             "properties": {
-                "Text": "Sign In",
+                "Text": "Sign Up",
                 "TextColor": "#FFFFFF",
                 "FontSize": 16,
                 "Font": "",
