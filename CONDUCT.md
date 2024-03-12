@@ -38,13 +38,13 @@ Respect is important, listening and engaging with each other's thoughts and idea
 As long as feedback is respectful and constructive it is encouraged.
 
 
-![Zach's Signature](src/zach_signature.jpg)
+![Zach's Signature](res/zach_signature.jpg)
 
-![Alex's Signature](src/Baez_Signature.png)
+![Alex's Signature](res/Baez_Signature.png)
 
-![Isis's Signature](src/isis_signature.jpg)
+![Isis's Signature](res/isis_signature.jpg)
 
-![Mike's Signature](src/Signature.png)
+![Mike's Signature](res/Signature.png)
 
-![Christine's Signature](src/christine_signature.jpg)
+![Christine's Signature](res/christine_signature.jpg)
 
