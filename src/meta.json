@@ -54,6 +54,11 @@
                                 "name": "NSCameraUsageDescription",
                                 "label": "Camera",
                                 "hint": "Describe why your app uses the camera."
+                            },
+                            {
+                                "name": "NSPhotoLibraryUsageDescription",
+                                "label": "Photos",
+                                "hint": "Describe why your app uses photos."
                             }
                         ]
                     },
@@ -173,7 +178,8 @@
                 "permissions": {
                     "ios": {
                         "usageDescriptions": {
-                            "NSCameraUsageDescription": ""
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
                         }
                     }
                 },
@@ -221,7 +227,8 @@
                 "permissions": {
                     "ios": {
                         "usageDescriptions": {
-                            "NSCameraUsageDescription": ""
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
                         }
                     }
                 },
@@ -279,6 +286,11 @@
                     "scope": "APP",
                     "name": "user id",
                     "screenId": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                },
+                "1c743e85-a0f1-42d0-a057-13f4da850271": {
+                    "scope": "APP",
+                    "name": "changing bio",
+                    "screenId": "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9"
                 }
             },
             "defaultDesignerDevice": "PHONE",
