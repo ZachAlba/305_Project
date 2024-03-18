@@ -128,19 +128,21 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Save Info for next time",
+                "Text": "Remember Me",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
                 "Color": "rgba(0, 0, 0, 1)",
-                "Height": 49,
-                "Width": 107,
+                "Height": 46,
+                "Width": 93,
                 "Visible": true,
-                "X": 255,
-                "Y": 277,
-                "RelativeX": 255,
-                "RelativeY": 277,
+
+                "X": 251,
+                "Y": 221,
+                "RelativeX": 251,
+                "RelativeY": 221,
+
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(0, 0, 0, 1)",
@@ -177,12 +179,16 @@
                     "left": "61.6%",
                     "top": "31.334332833583208%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "textAlign": "center"
                 },
                 "ParentId": "10bf8b67-84a0-40f5-9b19-a927afa077ae",
                 "position": "absolute",
-                "edgeOffsets": 277,
-                "children": "Save Info for next time"
+
+                "edgeOffsets": 221.00000000000003,
+                "children": "Remember Me",
+                "TextAlign": "center"
+
             },
             "children": [],
             "id": "35c261a9-7ff0-457f-8d13-cad14d972b31",
@@ -520,14 +526,15 @@
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(22, 66, 91, 1)",
-                "Height": 63,
-                "Width": 327,
+                "Color": "rgba(0, 0, 0, 1)",
+                "Height": 48,
+                "Width": 112,
                 "Visible": true,
-                "X": 35,
-                "Y": 12,
-                "RelativeX": 35,
-                "RelativeY": 12,
+                "X": 32.6171875,
+                "Y": 41,
+                "RelativeX": 32.6171875,
+                "RelativeY": 41,
+
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(22, 66, 91, 1)",
@@ -569,9 +576,11 @@
                 },
                 "ParentId": "10bf8b67-84a0-40f5-9b19-a927afa077ae",
                 "position": "absolute",
+
                 "edgeOffsets": 12,
                 "children": "Welcome to SoundScribe",
                 "FontWeight": "bold"
+
             },
             "children": [],
             "id": "5fa818c9-3404-4881-95f4-f322710aa18a",
