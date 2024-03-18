@@ -7,7 +7,13 @@
   "properties": {
     "bio": {"type": "string"},
     "name": {"type": "string"},
-    "picture": {"type": "string", "format": "uri"}
+    "picture": {"type": "string", "format": "uri"},
+    "fav_songs": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"}
+      }
+    }
   },
   "required": ["bio", "name", "picture"],
   "additionalProperties": false
