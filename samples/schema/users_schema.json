@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://project-4d159-default-rtdb.firebaseio.com/users",
+  "title": "Users Schema",
+  "description": "Schema for representing users.",
+  "type": "object",
+  "properties": {
+    "bio": {"type": "string"},
+    "name": {"type": "string"},
+    "picture": {"type": "string", "format": "uri"}
+  },
+  "required": ["bio", "name", "picture"],
+  "additionalProperties": false
+}

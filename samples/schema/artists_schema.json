@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://project-4d159-default-rtdb.firebaseio.com/artists",
+    "title": "Artists Schema",
+    "description": "Schema for representing artists.",
+    "type": "object",
+    "properties": {
+      "genre": {"type": "string"},
+      "name": {"type": "string"},
+      "picture": {"type": "string", "format": "uri"},
+      "albums": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "songs": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"}
+            },
+            "required": ["name"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["name", "songs"],
+        "additionalProperties": false
+      }
+    },
+    "required": ["genre", "name", "picture", "albums"],
+    "additionalProperties": false
+  }
+  
