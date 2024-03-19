@@ -6,6 +6,6 @@
 
 - Adoption Metric: We collect it by analyzing the authenticated users in Firebase. 
 - Alex
-- Mike
+- Engagement Metric: Use Firebase analytics to record daily user logins and interactions within the app to calculate DAU.
 - Christine
 - Isis
