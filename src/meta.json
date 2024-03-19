@@ -39,6 +39,22 @@
                     "__v": 0,
                     "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65aebd99b1e794aa09d9ac97/projects/65e9fc54efd4106c9eb31d50/assets/65f8885d95258c5703d6d855?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240318%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240318T183053Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=7a889e6bde55c1660444db904224498ae9865a48d39dc1498fb8526b59573af1de608b795e427529929942354b108e541c1efd022dacf20261bcf92807fed6396b4138166e8651363af54bb8c4735cb71d1211935a9747d62617b41545db01fbecc594a7b57bcab9e1627cd5ce60bb06afa56515fdac0434d5b679ddb4ddd7587577a9141eda5e7652290a543ac58d9f1ce6cc705c0852b721aa90a659c083bc71f4a20d8c66a6e8bfab73b9ad3487bf2e7d7548dcad33714ac2619e285b83551e5d3b698d369777093f2c68df320127906310051975b09c369ce77c763c0bc292ea40c706525ce5ca4ddba12cc94a97c8bed01d84cc9ec260ba8cf89f830783",
                     "signedUrlExpirationTime": 1710959453594
+                },
+                "65f9b1923bc0bc75e1ec6661": {
+                    "externalStorageType": "GCS",
+                    "_id": "65f9b1923bc0bc75e1ec6661",
+                    "size": "6969",
+                    "mimetype": "image/png",
+                    "encoding": "7bit",
+                    "originalname": "15185.png",
+                    "backendURI": "/project/65f884a9c56bd2a0788fabfb/getasset/65f9b1923bc0bc75e1ec6661",
+                    "name": "15185.png",
+                    "externalName": "users/65b088fee0a172a2e7613b2b/projects/65f884a9c56bd2a0788fabfb/assets/65f9b1923bc0bc75e1ec6661",
+                    "createdAt": "2024-03-19T15:38:58.742Z",
+                    "updatedAt": "2024-03-19T15:38:58.742Z",
+                    "__v": 0,
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65b088fee0a172a2e7613b2b/projects/65f884a9c56bd2a0788fabfb/assets/65f9b1923bc0bc75e1ec6661?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240319%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240319T153858Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=65d3a92d0447feb9bbfe9cef37ffafe96417b73a3c5f60263887c5cce3c87efcc11df05ab8a8558ceeaa24a3ad55f245b5e4ff010b866f15ee95f44d81d9268bb689d9a3efcdf58ef440660c912274c5226c29157e1666f15c00c5f53278ae709f4a1267ace60867a03deca516297631388be9da484e965d64b3e8b41321c0669c598ff5fd6db0dc7c752aa88d814b8d00dd93567fe2559a7bbc956720e7eceddc9e686db54801df19db11ea9aa43dd173bac9afa175982672eb48af1a8cf2fea8be648723fdf3674bb1cca3976968ef8a7bfd47442f658a9e83e556b0fc5698c9161c63d34903bb390307fc94f2cc425c91432ea39ed85452aeaf07af7e98db",
+                    "signedUrlExpirationTime": 1711035538773
                 }
             },
             "backendUpgradeVersion": 24,
@@ -99,7 +115,8 @@
                         "location": true,
                         "iap": false
                     }
-                }
+                },
+                "65f884a9c56bd2a0788fabfb": {}
             },
             "categories": [
                 "Music",
@@ -107,9 +124,6 @@
             ],
             "components": {
                 "children": [
-                    {
-                        "id": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
-                    },
                     {
                         "type": "Bottom Tab Navigator",
                         "translatedName": "Bottom Tab Navigator",
@@ -123,11 +137,23 @@
                             "navigationOptions": {
                                 "tabBarVisible": true
                             },
-                            "tabNavigationOptions": {}
+                            "tabNavigationOptions": {},
+                            "inactiveBackgroundColor": "rgba(255, 255, 255, 1)",
+                            "config": {
+                                "tabBarOptions": {
+                                    "tabBarInactiveBackgroundColor": "rgba(255, 255, 255, 1)"
+                                }
+                            }
                         },
                         "children": [
                             {
-                                "id": "2cf4b839-f1af-41e6-a0e1-a83743384de6"
+                                "id": "da6ed66d-4f0e-4fd5-884a-839cf8b56216"
+                            },
+                            {
+                                "id": "42404a9f-9833-41cf-aef3-464b8991d7ca"
+                            },
+                            {
+                                "id": "45515953-90de-437a-b15b-22648ff6db84"
                             },
                             {
                                 "id": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc"
@@ -139,6 +165,12 @@
                         "id": "4a8804d5-c5d6-41bc-b078-7115c4decbed",
                         "thunkableVersion": 447,
                         "name": "Bottom_Tab_Navigator1"
+                    },
+                    {
+                        "id": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                    },
+                    {
+                        "id": "2cf4b839-f1af-41e6-a0e1-a83743384de6"
                     }
                 ]
             },
@@ -177,10 +209,7 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {
-                            "NSCameraUsageDescription": "",
-                            "NSPhotoLibraryUsageDescription": ""
-                        }
+                        "usageDescriptions": {}
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -226,10 +255,7 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {
-                            "NSCameraUsageDescription": "",
-                            "NSPhotoLibraryUsageDescription": ""
-                        }
+                        "usageDescriptions": {}
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -253,7 +279,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "1",
+            "totalCopy": "0",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
