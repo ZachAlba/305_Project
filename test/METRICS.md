@@ -4,7 +4,7 @@
 
 ## 
 
-- Zach
+- Adoption Metric: We collect it by analyzing the authenticated users in Firebase. 
 - Alex
 - Mike
 - Christine
