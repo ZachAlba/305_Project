@@ -59,6 +59,52 @@
     },
     "children": [
         {
+            "type": "Image",
+            "translatedName": "Image",
+            "properties": {
+                "Picture": "15185.png",
+                "resizeMode": "stretch",
+                "Height": 35,
+                "Width": 31,
+                "Visible": true,
+                "X": 306,
+                "Y": 6,
+                "RelativeX": 306,
+                "RelativeY": 6,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "39.59864298502604%",
+                    "top": "0.5657336658125915%",
+                    "display": "flex"
+                },
+                "capInsets": {},
+                "ParentId": "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9",
+                "position": "absolute",
+                "edgeOffsets": 6
+            },
+            "children": [],
+            "id": "9d382b0a-6584-4bfe-92bd-6bc958736323",
+            "thunkableVersion": 449,
+            "name": "Settings_Pic"
+        },
+        {
             "type": "Label",
             "translatedName": "Label",
             "reactType": "Text",
@@ -747,10 +793,10 @@
                 "Height": 98,
                 "Width": 118,
                 "Visible": true,
-                "X": 231,
-                "Y": 22,
-                "RelativeX": 231,
-                "RelativeY": 22,
+                "X": 206,
+                "Y": 47,
+                "RelativeX": 206,
+                "RelativeY": 47,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -777,7 +823,7 @@
                 "capInsets": {},
                 "ParentId": "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9",
                 "position": "absolute",
-                "edgeOffsets": 22.999999999999986
+                "edgeOffsets": 47
             },
             "children": [],
             "id": "e2125007-aa2f-4317-9bad-b0efc96e6f3d",
