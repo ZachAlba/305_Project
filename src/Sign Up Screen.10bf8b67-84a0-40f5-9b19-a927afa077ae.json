@@ -467,8 +467,8 @@
             "translatedName": "Image",
             "properties": {
                 "resizeMode": "stretch",
-                "Height": 202,
-                "Width": 202,
+                "Height": 204,
+                "Width": 204,
                 "Visible": true,
                 "X": 84,
                 "Y": 39,
@@ -501,7 +501,7 @@
                 "capInsets": {},
                 "ParentId": "10bf8b67-84a0-40f5-9b19-a927afa077ae",
                 "position": "absolute",
-                "edgeOffsets": 39,
+                "edgeOffsets": 39.79999923706055,
                 "Picture": "Screenshot 2024-03-18 at 2.20.25 PM.png",
                 "BackgroundColor": "rgba(0, 0, 0, 0)"
             },
