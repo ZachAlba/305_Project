@@ -119,7 +119,18 @@
                 "65f884a9c56bd2a0788fabfb": {},
                 "da6ed66d-4f0e-4fd5-884a-839cf8b56216": {},
                 "42404a9f-9833-41cf-aef3-464b8991d7ca": {},
-                "45515953-90de-437a-b15b-22648ff6db84": {}
+                "45515953-90de-437a-b15b-22648ff6db84": {},
+                "e52b1220-3472-4615-9a7e-a0aba3a368c7": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    },
+                    "enabledFeatures": {
+                        "location": true,
+                        "iap": false
+                    }
+                }
             },
             "categories": [
                 "Music",
@@ -127,6 +138,12 @@
             ],
             "components": {
                 "children": [
+                    {
+                        "id": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
+                    },
+                    {
+                        "id": "e52b1220-3472-4615-9a7e-a0aba3a368c7"
+                    },
                     {
                         "type": "Bottom Tab Navigator",
                         "translatedName": "Bottom Tab Navigator",
@@ -170,9 +187,6 @@
                         "name": "Bottom_Tab_Navigator1"
                     },
                     {
-                        "id": "10bf8b67-84a0-40f5-9b19-a927afa077ae"
-                    },
-                    {
                         "id": "2cf4b839-f1af-41e6-a0e1-a83743384de6"
                     }
                 ]
@@ -212,10 +226,7 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {
-                            "NSCameraUsageDescription": "",
-                            "NSPhotoLibraryUsageDescription": ""
-                        }
+                        "usageDescriptions": {}
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -261,10 +272,7 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {
-                            "NSCameraUsageDescription": "",
-                            "NSPhotoLibraryUsageDescription": ""
-                        }
+                        "usageDescriptions": {}
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
