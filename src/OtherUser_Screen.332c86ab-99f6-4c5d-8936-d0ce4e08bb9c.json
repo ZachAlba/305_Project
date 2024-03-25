@@ -1,4 +1,5 @@
 {
+    "id": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -430,7 +431,6 @@
             "name": "Back_buttton"
         }
     ],
-    "id": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
     "thunkableVersion": 450,
     "name": "OtherUser_Screen"
 }
