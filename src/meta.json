@@ -342,7 +342,17 @@
                         "iap": false
                     }
                 },
-                "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c": {}
+                "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    },
+                    "enabledFeatures": {
+                        "location": true,
+                        "iap": false
+                    }
+                }
             },
             "categories": [
                 "Music",
@@ -511,7 +521,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "1",
+            "totalCopy": "0",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
@@ -559,6 +569,16 @@
                     "scope": "APP",
                     "name": "counter",
                     "screenId": "42404a9f-9833-41cf-aef3-464b8991d7ca"
+                },
+                "faac61c6-267c-4c1e-8820-05e057025ba5": {
+                    "scope": "APP",
+                    "name": "otherUser",
+                    "screenId": "42404a9f-9833-41cf-aef3-464b8991d7ca"
+                },
+                "4892491e-ffd9-433f-995c-5d8ced92b28c": {
+                    "scope": "APP",
+                    "name": "otherID",
+                    "screenId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c"
                 }
             },
             "defaultDesignerDevice": "PHONE",
