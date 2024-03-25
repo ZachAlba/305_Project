@@ -1,5 +1,31 @@
 # A/B Testing
 
+## A/B Test Name: 
+
+User Story: 4
+
+Metric (from the HEART grid): Heart
+
+**Hypthesis:** Users will experience increased satisfaction with the music discovery and sharing experience if we introduce personalized playlists based on their listening preferences.
+
+**Problem:** Users on music platforms are finding it difficult to discover new music that aligns with their tastes and preferences. The existing recommendation system lacks personalization and fails to engage users effectively, leading to decreased satisfaction and retention rates.
+
+**Impact:** By implementing personalized playlists, we aim to address the user dissatisfaction with music discovery, ultimately leading to increased user satisfaction, longer user engagement sessions, and higher retention rates. This improvement in user experience will lead to positive reviews, higher ratings, and a greater likelihood of users recommending our platform to others.
+
+**Experiment:**
+  -Setup: Implement a new feature within the music platform that offers personalized playlists to users based on their listening preferences and history. This feature will be prominently displayed on the platform's homepage and accessible via a dedicated section in the app.
+
+  -Audience: The experiment will target all active users of the music platform who have a sufficient listening history to enable personalized playlist generation. Users will be divided based on usage patterns, preferences, and engagement levels.
+
+  -Rational: The rationale behind this experiment is to address the current user dissatisfaction with the music discovery process by providing personalized recommendations tailored to their individual tastes. By offering curated playlists that align with each users preferences, we can increase engagement, satisfaction, and retention on the platform.
+
+  -Tracking: We will track user engagement, retention rates, and satisfaction based on NPS scoring.
+  
+  -Variations: The two variation we will have are the users who have the personalized playlists and the users who who will continue to use the previous system. (control group)
+  
+  -Design Work: Design the user interface for displaying personalized playlists. Conduct user testing and iterate on the design based on feedback to optimize the user experience and effectiveness of personalized playlists.
+  
+
 ## A/B Test Name: Enhanced Discovery Experience
 
 User Story Number: 4
