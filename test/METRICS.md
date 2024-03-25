@@ -14,4 +14,5 @@ For retention, a specific metric that could be used to measure the effectiveness
  ***Happiness Metric***
  We will give each user a short survey to see their opinions on the app.
  
-- Isis
+***Click-Through Rate (CTR)***
+  We will use firebase to track the ratio of users that completed every step of the profile such as adding a username, a bio, a profile picture to the total amount of users that sign up to the app. 

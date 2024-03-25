@@ -95,3 +95,25 @@ Variant (B): The new algorithm designed to enhance personalization based on indi
 **Design Work:**
 Include details about the recommendation engine changes.
 Provide any UI/UX mockups that might change as a result of the new recommendation system, such as new sections on the app's homepage or changes in how recommendations are displayed.
+
+
+## A/B Test Name: Profile Picture Visibility Variation
+User Story Number: 4
+Metric (from the HEART grid): Task Success
+
+**Hypothesis:** Providing users with a variety of avatar options for profile pictures may encourage them to personalize their profiles and increase engagement with the platform. By offering avatar options alongside the traditional profile picture upload feature, we expect to see an increase in the completion rate of user profiles and higher user satisfaction.
+**Problem:** Data indicates that some users may not upload profile pictures due to concerns about privacy, lack of suitable images, or simply not wanting to upload a personal photo. This could lead to incomplete profiles and reduced engagement with user-generated content.
+**Impact:** Offering avatar options for profile pictures can provide users with a convenient and privacy-conscious alternative to uploading personal photos, potentially increasing the overall completion rate of user profiles and fostering a stronger sense of identity within the platform community.
+**Experiment:**
+-Setup: Implement two versions of the profile picture selection process: the current version with only the option to upload a personal photo (Control) and the new variation with additional avatar options (Variant).
+-Audience: Randomly assign 50% of users to view the profile picture selection process with avatar options (Variant), while the other 50% continue to see the current process without avatar options (Control).
+-Rationale: Random assignment ensures that any differences in user behavior can be attributed to the presence of avatar options rather than other factors.
+-Tracking: Use Firebase Analytics to track the completion rate of user profiles (uploading either personal photos or selecting avatars) for both groups.
+
+**Variations:**
+Control (A): Current profile picture selection process with only the option to upload personal photos.
+Variant (B): New profile picture selection process with additional avatar options alongside the option to upload personal photos.
+
+**Design Work:**
+Describe the differences between the current and new profile picture selection processes, focusing on the inclusion of avatar options.
+Highlight how the new profile picture selection process aims to provide users with more choices and enhance the overall profile personalization experience.
