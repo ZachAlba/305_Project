@@ -4,7 +4,7 @@
 
 User Story: 4
 
-Metric (from the HEART grid): Heart
+Metric (from the HEART grid): Happiness
 
 **Hypthesis:** Users will experience increased satisfaction with the music discovery and sharing experience if we introduce personalized playlists based on their listening preferences.
 
