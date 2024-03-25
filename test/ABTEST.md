@@ -73,3 +73,25 @@ Variant (B): The app with a dark mode enabled by default.
 **Design Work:**
 Provide visuals for both light and dark mode interfaces.
 Clearly identify any UI elements that change between modes, such as text color, background color, and iconography
+
+
+## A/B Test Name: Personalized Music Recommendations for Increased Retention
+
+User Story Number:  4
+Metric (from the HEART grid): Retention
+
+**Hypothesis:** Users are more likely to return to the app if they receive personalized music recommendations that resonate with their tastes. We believe that implementing an enhanced algorithm for music suggestions will increase user retention rates, as users will find more value in the app's ability to discover new music tailored to their preferences.
+
+**Problem:** Current user retention rates are below our target goal, indicating that users are not finding enough value to return to the app regularly.
+**Impact:** By improving the personalization of music recommendations, we aim to create a more engaging experience that will make users more likely to come back, thereby increasing our retention rate.
+Experiment:
+**Setup:** Implement two versions of the recommendation engine: the existing one (Control) and the new enhanced algorithm (Variant).
+**Audience:** A random selection of 50% of existing users will experience the new algorithm to compare their retention rates against those who continue with the current version.
+**Rationale:** The test is conducted with existing users to directly measure the impact on retention, avoiding confounding factors that could affect new users' behaviors.
+**Tracking:** Monitor how often users return to the app over a 30-day period using Firebase Analytics and compare the frequency of sessions between the two groups.
+**Variations:**
+Control (A): The existing recommendation engine currently in use.
+Variant (B): The new algorithm designed to enhance personalization based on individual user behavior and feedback.
+**Design Work:**
+Include details about the recommendation engine changes.
+Provide any UI/UX mockups that might change as a result of the new recommendation system, such as new sections on the app's homepage or changes in how recommendations are displayed.
