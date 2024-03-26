@@ -266,12 +266,12 @@
             "translatedName": "Image",
             "properties": {
                 "resizeMode": "stretch",
-                "Height": 311,
-                "Width": 311,
+                "Height": 313,
+                "Width": 313,
                 "Visible": true,
-                "X": 31,
+                "X": 31.82291603088379,
                 "Y": 171,
-                "RelativeX": 31,
+                "RelativeX": 31.82291603088379,
                 "RelativeY": 171,
                 "ResizeMode": "STRETCH",
                 "style": {
@@ -299,7 +299,8 @@
                 "capInsets": {},
                 "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                 "position": "absolute",
-                "edgeOffsets": 171
+                "edgeOffsets": 171.82290649414062,
+                "Picture": ""
             },
             "children": [],
             "id": "c9abdb25-e429-42cb-8745-2b39a2ff544a",
