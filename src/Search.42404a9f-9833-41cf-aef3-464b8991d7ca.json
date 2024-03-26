@@ -72,9 +72,9 @@
                 "Height": 551,
                 "Width": 325,
                 "Visible": true,
-                "X": 35,
+                "X": 26,
                 "Y": 351,
-                "RelativeX": 35,
+                "RelativeX": 26,
                 "RelativeY": 351,
                 "ResizeMode": "STRETCH",
                 "style": {
