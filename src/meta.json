@@ -622,6 +622,11 @@
                     "scope": "APP",
                     "name": "changing artist",
                     "screenId": "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9"
+                },
+                "bb45f7f9-6645-436b-ade6-030b1f98faca": {
+                    "scope": "APP",
+                    "name": "post counter",
+                    "screenId": "45515953-90de-437a-b15b-22648ff6db84"
                 }
             },
             "defaultDesignerDevice": "PHONE",
