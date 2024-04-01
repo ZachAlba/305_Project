@@ -31,7 +31,7 @@
             "justifyContent": "center",
             "alignItems": "center",
             "display": "flex",
-            "backgroundColor": "rgba(217, 220, 214, 1)"
+            "backgroundColor": "rgba(58, 115, 165, 1)"
         },
         "ShowStatusBar": true,
         "StatusBarStyle": "default",
@@ -54,7 +54,7 @@
             "headerStyle": {}
         },
         "tabNavigationOptions": {},
-        "BackgroundColor": "rgba(217, 220, 214, 1)"
+        "BackgroundColor": "rgba(58, 115, 165, 1)"
     },
     "children": [
         {
@@ -62,11 +62,11 @@
             "translatedName": "Button",
             "properties": {
                 "Text": "Proceed to SoundScribe",
-                "TextColor": "#FFFFFF",
+                "TextColor": "rgba(217, 220, 214, 1)",
                 "FontSize": 16,
                 "Font": "",
                 "CustomFont": "",
-                "BackgroundColor": "rgba(58, 124, 165, 1)",
+                "BackgroundColor": "rgba(22, 66, 91, 1)",
                 "Height": 49,
                 "Width": 311,
                 "Visible": true,

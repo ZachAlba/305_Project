@@ -31,7 +31,7 @@
             "justifyContent": "center",
             "alignItems": "center",
             "display": "flex",
-            "backgroundColor": "rgba(217, 220, 214, 1)"
+            "backgroundColor": "rgba(58, 115, 165, 1)"
         },
         "ShowStatusBar": true,
         "StatusBarStyle": "default",
@@ -54,7 +54,7 @@
             "headerStyle": {}
         },
         "tabNavigationOptions": {},
-        "BackgroundColor": "rgba(217, 220, 214, 1)"
+        "BackgroundColor": "rgba(58, 115, 165, 1)"
     },
     "children": [
         {
@@ -62,11 +62,11 @@
             "translatedName": "Button",
             "properties": {
                 "Text": "<",
-                "TextColor": "#FFFFFF",
+                "TextColor": "rgba(217, 220, 214, 1)",
                 "FontSize": 16,
                 "Font": "",
                 "CustomFont": "",
-                "BackgroundColor": "rgba(58, 124, 165, 1)",
+                "BackgroundColor": "rgba(22, 66, 91, 1)",
                 "Height": 47,
                 "Width": 43,
                 "Visible": true,
@@ -116,10 +116,10 @@
             "translatedName": "Button",
             "properties": {
                 "Text": "Reset Password",
-                "TextColor": "#FFFFFF",
+                "TextColor": "rgba(217, 220, 214, 1)",
                 "FontSize": 16,
                 "CustomFont": "",
-                "BackgroundColor": "rgba(58, 124, 165, 1)",
+                "BackgroundColor": "rgba(22, 66, 91, 1)",
                 "Height": 49,
                 "Width": 311,
                 "Visible": true,
@@ -169,11 +169,11 @@
             "translatedName": "Button",
             "properties": {
                 "Text": "Sign Out",
-                "TextColor": "#FFFFFF",
+                "TextColor": "rgba(217, 220, 214, 1)",
                 "FontSize": 16,
                 "Font": "",
                 "CustomFont": "",
-                "BackgroundColor": "rgba(58, 124, 165, 1)",
+                "BackgroundColor": "rgba(22, 66, 91, 1)",
                 "Height": 49,
                 "Width": 311,
                 "Visible": true,
@@ -229,13 +229,13 @@
                 "CustomFont": "",
                 "LineHeight": 1,
                 "Color": "rgba(0, 0, 0, 1)",
-                "Height": 45,
-                "Width": 311,
+                "Height": 47,
+                "Width": 313,
                 "Visible": true,
-                "X": 32,
-                "Y": 522,
-                "RelativeX": 32,
-                "RelativeY": 522,
+                "X": 31.9921875,
+                "Y": 521.9921875,
+                "RelativeX": 31.9921875,
+                "RelativeY": 521.9921875,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(0, 0, 0, 1)",
@@ -276,7 +276,7 @@
                 },
                 "ParentId": "2cf4b839-f1af-41e6-a0e1-a83743384de6",
                 "position": "absolute",
-                "edgeOffsets": 522,
+                "edgeOffsets": 521.9921875,
                 "children": ""
             },
             "children": [],
