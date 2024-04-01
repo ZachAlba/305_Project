@@ -241,7 +241,7 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Favorite artist",
+                "Text": "",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
@@ -295,7 +295,7 @@
                 "ParentId": "9fb8f5fb-3fa2-4993-baa8-c163fe0110c9",
                 "position": "absolute",
                 "edgeOffsets": 454,
-                "children": "Favorite artist"
+                "children": ""
             },
             "children": [],
             "id": "19c411c0-d673-48da-84c9-b6667f9714b6",
