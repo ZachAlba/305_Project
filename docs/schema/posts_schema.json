@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://project-4d159-default-rtdb.firebaseio.com/posts",
+    "title": "Posts Schema",
+    "description": "Schema for representing use generated posts.",
+    "type": "object",
+    "properties": {
+      "counter": { "type": "number" },
+        "items": {
+        "type": "object",
+        "properties": {
+            "title": { "type": "string" },
+            "body": { "type": "string" }
+        },
+        "required": ["title", "body"],
+        "additionalProperties": false
+    }
+    },
+    
+    "additionalProperties": false
+  }

@@ -6,15 +6,14 @@
   "type": "object",
   "properties": {
     "bio": {"type": "string"},
-    "name": {"type": "string"},
+    "username": {"type": "string"},
     "picture": {"type": "string", "format": "uri"},
-    "fav_songs": {
-      "type": "object",
-      "properties": {
-        "name": {"type": "string"}
-      }
-    }
+    "fav_artist": {"type": "string"},
+    "rating": {"type": "number"},
+    "thumbnailUrl": {"type": "string", "format": "uri"},
+    "following_list": {"type": "array", "items": {"type": "string"}},
+    "followers_list": {"type": "array", "items": {"type": "string"}}
   },
-  "required": ["bio", "name", "picture"],
+  "required": ["username"],
   "additionalProperties": false
 }
