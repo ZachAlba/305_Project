@@ -6,6 +6,6 @@
 
 [US3: Backend Management](https://docs.google.com/presentation/d/1ncXEakdy4MjMP3l-YUKqOJpVN_56LRhWfROXyAT4OTw/edit?usp=sharing)
 
-[US4: Golden Path](URL)
+[US4: Golden Path](https://docs.google.com/presentation/d/1mMy4110c5ZxkaZedTfNCloCzpKPqBsfJF_eawnD2b08/edit?usp=sharing)
 
 [US5: Profile Creation](https://docs.google.com/presentation/d/1MA56-sofBb54qNKqrBnCd3MxKyX1fFKaSlzRuYjBnaU/edit#slide=id.p) 
