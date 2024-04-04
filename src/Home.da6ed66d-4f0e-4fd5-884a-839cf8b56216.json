@@ -55,9 +55,54 @@
         },
         "tabNavigationOptions": {},
         "BackgroundColor": "rgba(58, 115, 165, 1)",
-        "Scrollable": true
+        "Scrollable": false
     },
     "children": [
+        {
+            "type": "Image",
+            "translatedName": "Image",
+            "properties": {
+                "resizeMode": "stretch",
+                "Height": 311,
+                "Width": 311,
+                "Visible": true,
+                "X": 28,
+                "Y": 669,
+                "RelativeX": 28,
+                "RelativeY": 669,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "10.133333333333333%",
+                    "top": "55.08222451274363%",
+                    "display": "flex"
+                },
+                "capInsets": {},
+                "ParentId": "da6ed66d-4f0e-4fd5-884a-839cf8b56216",
+                "position": "absolute",
+                "edgeOffsets": 669
+            },
+            "children": [],
+            "id": "68bd42a5-d35e-4472-aeb6-a60910c191f3",
+            "thunkableVersion": 451,
+            "name": "Image3"
+        },
         {
             "type": "Label",
             "translatedName": "Label",
@@ -131,19 +176,19 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "We Can't Be Friends (Wait For Your Love) by Ariana Grande          Lose Control by Teddy Swims          Beautiful Things by Benson Boone          Carnival by\u00a5$: Ye & Ty Dolla $ign Featuring Rich The Kid & Playboi Carti          Lovin On Me by Jack Harlow",
+                "Text": "We Can't Be Friends (Wait For Your Love) by Ariana Grande\t\t\tLose Control by Teddy Swims\t\t\tBeautiful Things by Benson Boone\t\t\tCarnival by\u00a5$: Ye & Ty Dolla $ign Featuring Rich The Kid & Playboi Carti\t\t\tLovin On Me by Jack Harlow",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
                 "Color": "rgba(217, 220, 214, 1)",
-                "Height": 166,
-                "Width": 361,
+                "Height": 26,
+                "Width": 367,
                 "Visible": true,
-                "X": 13,
-                "Y": 575,
-                "RelativeX": 13,
-                "RelativeY": 575,
+                "X": 5,
+                "Y": 568,
+                "RelativeX": 5,
+                "RelativeY": 568,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(217, 220, 214, 1)",
@@ -184,8 +229,8 @@
                 },
                 "ParentId": "da6ed66d-4f0e-4fd5-884a-839cf8b56216",
                 "position": "absolute",
-                "edgeOffsets": 575,
-                "children": "We Can't Be Friends (Wait For Your Love) by Ariana Grande          Lose Control by Teddy Swims          Beautiful Things by Benson Boone          Carnival by\u00a5$: Ye & Ty Dolla $ign Featuring Rich The Kid & Playboi Carti          Lovin On Me by Jack Harlow"
+                "edgeOffsets": 568,
+                "children": "We Can't Be Friends (Wait For Your Love) by Ariana Grande\t\t\tLose Control by Teddy Swims\t\t\tBeautiful Things by Benson Boone\t\t\tCarnival by\u00a5$: Ye & Ty Dolla $ign Featuring Rich The Kid & Playboi Carti\t\t\tLovin On Me by Jack Harlow"
             },
             "children": [],
             "id": "402008ce-0da8-47d4-b24f-c0f0449138c5",
@@ -520,8 +565,8 @@
             "properties": {
                 "Picture": "Eternal Sunshine.jpeg",
                 "resizeMode": "stretch",
-                "Height": 311,
-                "Width": 311,
+                "Height": 313,
+                "Width": 313,
                 "Visible": true,
                 "X": 32,
                 "Y": 146,
