@@ -1,4 +1,5 @@
 {
+    "id": "b1312145-94e2-445e-8e7c-4cea8cf60d0c",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -517,7 +518,6 @@
             "name": "Image2"
         }
     ],
-    "id": "b1312145-94e2-445e-8e7c-4cea8cf60d0c",
     "thunkableVersion": 451,
     "name": "Home 1"
 }
