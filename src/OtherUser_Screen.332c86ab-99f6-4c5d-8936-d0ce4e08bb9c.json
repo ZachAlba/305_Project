@@ -72,10 +72,10 @@
                 "Height": 46,
                 "Width": 93,
                 "Visible": true,
-                "X": 227,
-                "Y": 12,
-                "RelativeX": 227,
-                "RelativeY": 12,
+                "X": 251,
+                "Y": 11,
+                "RelativeX": 251,
+                "RelativeY": 11,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -106,7 +106,7 @@
                 "Disabled": false,
                 "ParentId": "2cf4b839-f1af-41e6-a0e1-a83743384de6",
                 "position": "absolute",
-                "edgeOffsets": 12
+                "edgeOffsets": 11.999999999999998
             },
             "children": [],
             "id": "40cf1e90-25cf-4795-b3b8-e35e3c056e00",
@@ -119,7 +119,7 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "recent posts",
+                "Text": "Recent Posts",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
@@ -173,7 +173,7 @@
                 "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                 "position": "absolute",
                 "edgeOffsets": 323.994140625,
-                "children": "recent posts"
+                "children": "Recent Posts"
             },
             "children": [],
             "id": "fab540bd-0516-44b7-bdc5-3cc55b34adbc",
@@ -214,13 +214,13 @@
                     "translatedName": "Image",
                     "properties": {
                         "resizeMode": "stretch",
-                        "Height": 108,
-                        "Width": 121,
+                        "Height": 150,
+                        "Width": 150,
                         "Visible": true,
-                        "X": 199,
-                        "Y": 131,
-                        "RelativeX": 168,
-                        "RelativeY": 59,
+                        "X": 187,
+                        "Y": 137,
+                        "RelativeX": 156,
+                        "RelativeY": 65,
                         "ResizeMode": "STRETCH",
                         "style": {
                             "marginTop": 0,
@@ -247,7 +247,7 @@
                         "capInsets": {},
                         "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                         "position": "absolute",
-                        "edgeOffsets": 131,
+                        "edgeOffsets": 137,
                         "Picture": ""
                     },
                     "children": [],
@@ -260,7 +260,7 @@
                     "translatedName": "Label",
                     "reactType": "Text",
                     "properties": {
-                        "Text": "followers",
+                        "Text": "Followers: ",
                         "FontSize": 18,
                         "Font": "",
                         "CustomFont": "",
@@ -269,10 +269,10 @@
                         "Height": 37,
                         "Width": 88,
                         "Visible": true,
-                        "X": 66,
-                        "Y": 131,
-                        "RelativeX": 35,
-                        "RelativeY": 59,
+                        "X": 32,
+                        "Y": 137,
+                        "RelativeX": 1,
+                        "RelativeY": 65,
                         "ResizeMode": "STRETCH",
                         "style": {
                             "color": "rgba(0, 0, 0, 1)",
@@ -313,8 +313,8 @@
                         },
                         "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                         "position": "absolute",
-                        "edgeOffsets": 131,
-                        "children": "followers"
+                        "edgeOffsets": 137,
+                        "children": "Followers: "
                     },
                     "children": [],
                     "id": "1efa8e6f-bd26-4e46-b1ad-0cbb5d0ebdff",
@@ -326,19 +326,19 @@
                     "translatedName": "Label",
                     "reactType": "Text",
                     "properties": {
-                        "Text": "following",
+                        "Text": "Following: ",
                         "FontSize": 18,
                         "Font": "",
                         "CustomFont": "",
                         "LineHeight": 1,
                         "Color": "rgba(0, 0, 0, 1)",
-                        "Height": 32,
-                        "Width": 79,
+                        "Height": 34,
+                        "Width": 88,
                         "Visible": true,
-                        "X": 66,
-                        "Y": 193,
-                        "RelativeX": 35,
-                        "RelativeY": 121,
+                        "X": 32,
+                        "Y": 195,
+                        "RelativeX": 1,
+                        "RelativeY": 123,
                         "ResizeMode": "STRETCH",
                         "style": {
                             "color": "rgba(0, 0, 0, 1)",
@@ -379,8 +379,8 @@
                         },
                         "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                         "position": "absolute",
-                        "edgeOffsets": 193,
-                        "children": "following"
+                        "edgeOffsets": 195.55555725097656,
+                        "children": "Following: "
                     },
                     "children": [],
                     "id": "6363e4b7-c7cc-45a3-ae1a-04388dcc80f2",
@@ -392,7 +392,7 @@
                     "translatedName": "Label",
                     "reactType": "Text",
                     "properties": {
-                        "Text": "username",
+                        "Text": "Username",
                         "FontSize": 18,
                         "Font": "",
                         "CustomFont": "",
@@ -450,7 +450,7 @@
                         "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                         "position": "absolute",
                         "edgeOffsets": 85.99609375,
-                        "children": "username"
+                        "children": "Username"
                     },
                     "children": [],
                     "id": "af83aed0-33c4-4590-b056-8f05ff44b7d7",
@@ -545,10 +545,10 @@
                 "Height": 36,
                 "Width": 35,
                 "Visible": true,
-                "X": 20,
-                "Y": 11.9921875,
-                "RelativeX": 20,
-                "RelativeY": 11.9921875,
+                "X": 31,
+                "Y": 16,
+                "RelativeX": 31,
+                "RelativeY": 16,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -579,7 +579,7 @@
                 "Disabled": false,
                 "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                 "position": "absolute",
-                "edgeOffsets": 11.9921875
+                "edgeOffsets": 16.9921875
             },
             "children": [],
             "id": "dec5605b-ff70-4caf-b5b3-d3259ee3acbc",

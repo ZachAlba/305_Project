@@ -58,6 +58,52 @@
     },
     "children": [
         {
+            "type": "Image",
+            "translatedName": "Image",
+            "properties": {
+                "Picture": "Screenshot 2024-03-18 at 2.20.25 PM.png",
+                "resizeMode": "stretch",
+                "Height": 225,
+                "Width": 225,
+                "Visible": true,
+                "X": 75,
+                "Y": 12,
+                "RelativeX": 75,
+                "RelativeY": 12,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "43.91943408858772%",
+                    "top": "4.8583878748236655%",
+                    "display": "flex"
+                },
+                "capInsets": {},
+                "ParentId": "e52b1220-3472-4615-9a7e-a0aba3a368c7",
+                "position": "absolute",
+                "edgeOffsets": 12.999999999999998
+            },
+            "children": [],
+            "id": "2d3b6bab-2d0e-4c40-9339-fd7a1f2efb87",
+            "thunkableVersion": 452,
+            "name": "Image4"
+        },
+        {
             "type": "Button",
             "translatedName": "Button",
             "properties": {
@@ -120,10 +166,10 @@
                 "Height": 37,
                 "Width": 311,
                 "Visible": true,
-                "X": 32,
-                "Y": 134,
-                "RelativeX": 32,
-                "RelativeY": 134,
+                "X": 31,
+                "Y": 252,
+                "RelativeX": 31,
+                "RelativeY": 252,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(0, 0, 0, 1)",
@@ -168,7 +214,7 @@
                 "underlineColorAndroid": "rgba(0, 0, 0, 0)",
                 "ParentId": "e52b1220-3472-4615-9a7e-a0aba3a368c7",
                 "position": "absolute",
-                "edgeOffsets": 134,
+                "edgeOffsets": 252,
                 "placeholder": "Enter username"
             },
             "children": [],
@@ -191,9 +237,9 @@
                 "Width": 311,
                 "Visible": true,
                 "X": 32,
-                "Y": 78,
+                "Y": 228,
                 "RelativeX": 32,
-                "RelativeY": 78,
+                "RelativeY": 228,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(0, 0, 0, 1)",
@@ -234,7 +280,7 @@
                 },
                 "ParentId": "e52b1220-3472-4615-9a7e-a0aba3a368c7",
                 "position": "absolute",
-                "edgeOffsets": 78,
+                "edgeOffsets": 228,
                 "children": "Set your username!"
             },
             "children": [],

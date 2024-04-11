@@ -58,6 +58,52 @@
     },
     "children": [
         {
+            "type": "Image",
+            "translatedName": "Image",
+            "properties": {
+                "Picture": "Screenshot 2024-03-18 at 2.20.25 PM.png",
+                "resizeMode": "stretch",
+                "Height": 225,
+                "Width": 225,
+                "Visible": true,
+                "X": 74,
+                "Y": 73,
+                "RelativeX": 74,
+                "RelativeY": 73,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "26.58610216584455%",
+                    "top": "10.855420105211605%",
+                    "display": "flex"
+                },
+                "capInsets": {},
+                "ParentId": "2cf4b839-f1af-41e6-a0e1-a83743384de6",
+                "position": "absolute",
+                "edgeOffsets": 73
+            },
+            "children": [],
+            "id": "13fe3f8b-7c9a-4857-88f8-d3058473999a",
+            "thunkableVersion": 452,
+            "name": "Image5"
+        },
+        {
             "type": "Button",
             "translatedName": "Button",
             "properties": {
