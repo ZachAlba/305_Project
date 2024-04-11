@@ -1,0 +1,87 @@
+/* colors
+#3A73A5
+#16425B
+#F8F9FB
+*/
+
+body{
+    background-color: #3A73A5;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    margin-top:100px;
+}
+h1{
+    background-color: #16425B;
+    font-size: 2em;
+    text-align: center;
+    color: #F8F9FB;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.content-block {
+    background-color: #F8F9FB;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-block {
+    background-color: #16425B;
+    color: #F8F9FB;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/* responsive styles */
+
+/* when screen small */
+@media screen and (max-width: 992px) {
+    .footer {
+      position: static;
+    }
+    /* overload bootstrap classes here*/
+    .active {
+            text-decoration:underline;
+    }
+
+    /*animations*/
+    .grow { transition: all .2s ease-in-out; }
+    .grow:hover {text-decoration:underline;}
+
+}
+
+/* when screen big */
+@media screen and (min-width: 992px){
+    
+    /*animations*/      
+    .grow { transition: all .2s ease-in-out; }
+    .grow:hover { 
+            text-decoration: underline;
+            transform: scale(1.2); 
+    }
+
+    /* overload bootstrap classes here*/
+    .active {
+            background-color: #FFFFFFff;
+            color: #000000ff;
+            border: 1px solid #000000ff;
+            border-radius: 40px;
+            text-decoration: underline;
+    }
+    
+}
