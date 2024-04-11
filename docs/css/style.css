@@ -7,9 +7,13 @@
 body{
     background-color: #3A73A5;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 main{
     margin-top:100px;
+    flex: 1;
 }
 h1{
     background-color: #16425B;
@@ -38,7 +42,10 @@ h1{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+footer{
+    bottom: 0;
+    flex-shrink: 0;
+}
 .center {
     display: block;
     margin-left: auto;
