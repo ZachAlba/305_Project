@@ -11,8 +11,18 @@
     "fav_artist": {"type": "string"},
     "rating": {"type": "number"},
     "thumbnailUrl": {"type": "string", "format": "uri"},
-    "following_list": {"type": "array", "items": {"type": "string"}},
-    "followers_list": {"type": "array", "items": {"type": "string"}}
+    "following": {
+      "type": "object",
+      "additionalProperties": {
+      "type": "boolean"
+      }
+    },
+    "followers": {
+      "type": "object",
+      "additionalProperties": {
+      "type": "boolean"
+      }
+    }
   },
   "required": ["username"],
   "additionalProperties": false
