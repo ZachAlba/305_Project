@@ -819,6 +819,21 @@
                     "scope": "APP",
                     "name": "postList",
                     "screenId": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc"
+                },
+                "c50b1200-465c-42de-b28f-49b0bc08f73c": {
+                    "scope": "APP",
+                    "name": "posterName",
+                    "screenId": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc"
+                },
+                "33358f26-c9cc-4f74-9928-0f35b1264ca1": {
+                    "scope": "APP",
+                    "name": "post",
+                    "screenId": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc"
+                },
+                "788d0ecc-ab3c-461e-be52-9576d1eb8528": {
+                    "scope": "APP",
+                    "name": "postBody",
+                    "screenId": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc"
                 }
             },
             "defaultDesignerDevice": "PHONE",
