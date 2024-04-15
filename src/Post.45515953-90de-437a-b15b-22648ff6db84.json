@@ -53,7 +53,10 @@
         "navigationOptions": {
             "headerStyle": {}
         },
-        "tabNavigationOptions": {},
+        "tabNavigationOptions": {
+            "inactiveTabIcon": "output-onlinepngtools (10).png",
+            "activeTabIcon": "output-onlinepngtools (11).png"
+        },
         "BackgroundColor": "rgba(58, 115, 165, 1)"
     },
     "children": [
@@ -62,7 +65,7 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Label",
+                "Text": "",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
@@ -116,7 +119,7 @@
                 "ParentId": "45515953-90de-437a-b15b-22648ff6db84",
                 "position": "absolute",
                 "edgeOffsets": 389,
-                "children": "Label"
+                "children": ""
             },
             "children": [],
             "id": "f573455e-185f-4f81-bdbb-f4d573a23cb5",
@@ -229,7 +232,7 @@
                     "top": "37.75112260764149%",
                     "display": "flex"
                 },
-                "FontBold": false,
+                "FontBold": true,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,
@@ -362,13 +365,15 @@
                     "top": "8.815590373758432%",
                     "lineHeight": 1,
                     "display": "flex",
-                    "textAlign": "center"
+                    "textAlign": "center",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "45515953-90de-437a-b15b-22648ff6db84",
                 "position": "absolute",
                 "edgeOffsets": 38,
                 "children": "Add a post below!",
-                "TextAlign": "center"
+                "TextAlign": "center",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "59f6d46e-56c3-4d6c-9c06-c90b744b74d0",

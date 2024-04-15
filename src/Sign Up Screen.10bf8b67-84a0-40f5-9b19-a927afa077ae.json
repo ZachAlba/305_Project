@@ -112,12 +112,14 @@
                     "left": "61.6%",
                     "top": "31.334332833583208%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "10bf8b67-84a0-40f5-9b19-a927afa077ae",
                 "position": "absolute",
                 "edgeOffsets": 470,
-                "children": "Remember Me?"
+                "children": "Remember Me?",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "35c261a9-7ff0-457f-8d13-cad14d972b31",
@@ -264,7 +266,7 @@
                     "top": "78.89055884045283%",
                     "display": "flex"
                 },
-                "FontBold": false,
+                "FontBold": true,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,
@@ -318,7 +320,7 @@
                     "top": "66.0969564046102%",
                     "display": "flex"
                 },
-                "FontBold": false,
+                "FontBold": true,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,

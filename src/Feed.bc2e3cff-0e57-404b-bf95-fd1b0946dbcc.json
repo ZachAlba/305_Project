@@ -53,7 +53,10 @@
         "navigationOptions": {
             "headerStyle": {}
         },
-        "tabNavigationOptions": {},
+        "tabNavigationOptions": {
+            "activeTabIcon": "output-onlinepngtools (8).png",
+            "inactiveTabIcon": "output-onlinepngtools (9).png"
+        },
         "BackgroundColor": "rgba(58, 115, 165, 1)",
         "Scrollable": true
     },
@@ -63,22 +66,22 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Label",
+                "Text": "",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(0, 0, 0, 1)",
+                "Color": "rgba(129, 195, 215, 1)",
                 "Height": 433,
                 "Width": 325,
                 "Visible": true,
-                "X": 34,
+                "X": 32,
                 "Y": 476,
-                "RelativeX": 34,
+                "RelativeX": 32,
                 "RelativeY": 476,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "color": "rgba(0, 0, 0, 1)",
+                    "color": "rgba(129, 195, 215, 1)",
                     "fontSize": 18,
                     "fontStyle": "normal",
                     "textShadowOffset": {},
@@ -112,12 +115,14 @@
                     "left": "27.6%",
                     "top": "71.93403115336862%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc",
                 "position": "absolute",
                 "edgeOffsets": 476,
-                "children": "Label"
+                "children": "",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "e90facb8-99cd-40a8-9a29-dd4c6bdc5088",
@@ -130,16 +135,16 @@
             "reactType": "ListView",
             "properties": {
                 "TextItems": [],
-                "TextItemsColor": "rgba(176, 176, 176, 1)",
-                "TextItemsBackgroundColor": "rgba(0,0,0,0)",
+                "TextItemsColor": "rgba(217, 220, 214, 1)",
+                "TextItemsBackgroundColor": "rgba(58, 124, 165, 1)",
                 "TextItemsFontSize": 16,
                 "ShowArrow": true,
                 "Height": 300,
                 "Width": 313,
                 "Visible": true,
-                "X": 33,
+                "X": 32,
                 "Y": 115,
-                "RelativeX": 33,
+                "RelativeX": 32,
                 "RelativeY": 115,
                 "ResizeMode": "STRETCH",
                 "Justification": "center",
@@ -218,7 +223,7 @@
                     "top": "12.473764948580397%",
                     "display": "flex"
                 },
-                "FontBold": false,
+                "FontBold": true,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,
@@ -241,7 +246,7 @@
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(0, 0, 0, 1)",
+                "Color": "rgba(220, 217, 214, 1)",
                 "Height": 45,
                 "Width": 311,
                 "Visible": true,
@@ -251,7 +256,7 @@
                 "RelativeY": 29,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "color": "rgba(0, 0, 0, 1)",
+                    "color": "rgba(220, 217, 214, 1)",
                     "fontSize": 18,
                     "fontStyle": "normal",
                     "textShadowOffset": {},
@@ -285,12 +290,14 @@
                     "left": "21.626668294270832%",
                     "top": "15.65217299797367%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc",
                 "position": "absolute",
                 "edgeOffsets": 29,
-                "children": "Your Feed"
+                "children": "Your Feed",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "333d3e79-ef38-4fa8-a9c6-2fdc6fffe0ec",
