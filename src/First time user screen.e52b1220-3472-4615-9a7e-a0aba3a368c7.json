@@ -63,13 +63,13 @@
             "properties": {
                 "Picture": "Screenshot 2024-03-18 at 2.20.25 PM.png",
                 "resizeMode": "stretch",
-                "Height": 225,
-                "Width": 225,
+                "Height": 227,
+                "Width": 227,
                 "Visible": true,
                 "X": 75,
-                "Y": 12,
+                "Y": 11.9921875,
                 "RelativeX": 75,
-                "RelativeY": 12,
+                "RelativeY": 11.9921875,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -96,7 +96,7 @@
                 "capInsets": {},
                 "ParentId": "e52b1220-3472-4615-9a7e-a0aba3a368c7",
                 "position": "absolute",
-                "edgeOffsets": 12.999999999999998
+                "edgeOffsets": 11.9921875
             },
             "children": [],
             "id": "2d3b6bab-2d0e-4c40-9339-fd7a1f2efb87",
@@ -144,7 +144,7 @@
                     "top": "29.570215502600263%",
                     "display": "flex"
                 },
-                "FontBold": false,
+                "FontBold": true,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,
@@ -163,13 +163,13 @@
             "properties": {
                 "Hint": "Enter username",
                 "CustomFont": "",
-                "Height": 37,
-                "Width": 311,
+                "Height": 41,
+                "Width": 315,
                 "Visible": true,
-                "X": 31,
-                "Y": 252,
-                "RelativeX": 31,
-                "RelativeY": 252,
+                "X": 30.989582061767578,
+                "Y": 250,
+                "RelativeX": 30.989582061767578,
+                "RelativeY": 250,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(0, 0, 0, 1)",
@@ -214,7 +214,7 @@
                 "underlineColorAndroid": "rgba(0, 0, 0, 0)",
                 "ParentId": "e52b1220-3472-4615-9a7e-a0aba3a368c7",
                 "position": "absolute",
-                "edgeOffsets": 252,
+                "edgeOffsets": 250.9895782470703,
                 "placeholder": "Enter username"
             },
             "children": [],
@@ -232,7 +232,7 @@
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(0, 0, 0, 1)",
+                "Color": "rgba(217, 220, 214, 1)",
                 "Height": 45,
                 "Width": 311,
                 "Visible": true,
@@ -242,7 +242,7 @@
                 "RelativeY": 228,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "color": "rgba(0, 0, 0, 1)",
+                    "color": "rgba(217, 220, 214, 1)",
                     "fontSize": 18,
                     "fontStyle": "normal",
                     "textShadowOffset": {},
@@ -276,12 +276,14 @@
                     "left": "26.533333333333335%",
                     "top": "8.130935142780173%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "e52b1220-3472-4615-9a7e-a0aba3a368c7",
                 "position": "absolute",
                 "edgeOffsets": 228,
-                "children": "Set your username!"
+                "children": "Set your username!",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "e2bd8422-1d2e-45cc-aab2-9c7b57aa3677",

@@ -53,7 +53,10 @@
         "navigationOptions": {
             "headerStyle": {}
         },
-        "tabNavigationOptions": {},
+        "tabNavigationOptions": {
+            "inactiveTabIcon": "output-onlinepngtools (5).png",
+            "activeTabIcon": "output-onlinepngtools (6).png"
+        },
         "BackgroundColor": "rgba(58, 115, 165, 1)",
         "Scrollable": true
     },
@@ -130,10 +133,10 @@
             "reactType": "ListView",
             "properties": {
                 "TextItems": [],
-                "TextItemsColor": "rgba(0, 0, 0, 1)",
-                "TextItemsBackgroundColor": "rgba(0,0,0,0)",
+                "TextItemsColor": "rgba(217, 220, 214, 1)",
+                "TextItemsBackgroundColor": "rgba(58, 124, 165, 1)",
                 "TextItemsFontSize": 16,
-                "ShowArrow": true,
+                "ShowArrow": false,
                 "Height": 487,
                 "Width": 243,
                 "Visible": true,
@@ -190,9 +193,9 @@
                 "Height": 39,
                 "Width": 41,
                 "Visible": true,
-                "X": 320.98956298828125,
+                "X": 309.98956298828125,
                 "Y": 13.997395515441895,
-                "RelativeX": 320.98956298828125,
+                "RelativeX": 309.98956298828125,
                 "RelativeY": 13.997395515441895,
                 "ResizeMode": "STRETCH",
                 "style": {
@@ -218,7 +221,7 @@
                     "top": "0%",
                     "display": "flex"
                 },
-                "FontBold": false,
+                "FontBold": true,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,
@@ -238,7 +241,7 @@
                 "Hint": "Search",
                 "CustomFont": "",
                 "Height": 37,
-                "Width": 311,
+                "Width": 293,
                 "Visible": true,
                 "X": 6,
                 "Y": 16,

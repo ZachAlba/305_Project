@@ -53,7 +53,10 @@
         "navigationOptions": {
             "headerStyle": {}
         },
-        "tabNavigationOptions": {},
+        "tabNavigationOptions": {
+            "activeTabIcon": "output-onlinepngtools (2).png",
+            "inactiveTabIcon": "output-onlinepngtools.png"
+        },
         "BackgroundColor": "rgba(58, 115, 165, 1)",
         "Scrollable": false
     },

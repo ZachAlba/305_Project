@@ -157,12 +157,14 @@
                     "left": "57.2%",
                     "top": "26.836581709145428%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "0b072a3c-de07-435a-b6f0-f94374bc8a22",
                 "position": "absolute",
                 "edgeOffsets": 306,
-                "children": "Very Likely"
+                "children": "Very Likely",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "3565027a-99f3-4535-ad78-8e51bf71ce43",
@@ -223,12 +225,14 @@
                     "left": "12.666666666666666%",
                     "top": "26.986506746626688%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "0b072a3c-de07-435a-b6f0-f94374bc8a22",
                 "position": "absolute",
                 "edgeOffsets": 311,
-                "children": "Not Likely"
+                "children": "Not Likely",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "31b8c56a-3ef1-4d56-840c-41ac8fa2b31e",
@@ -342,7 +346,7 @@
                     "top": "63.90304908580866%",
                     "display": "flex"
                 },
-                "FontBold": false,
+                "FontBold": true,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,
@@ -410,12 +414,14 @@
                     "left": "23.333333333333332%",
                     "top": "10.9795108549241%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "0b072a3c-de07-435a-b6f0-f94374bc8a22",
                 "position": "absolute",
                 "edgeOffsets": 234,
-                "children": "How likely are you to recommend SoundScribe to a friend?"
+                "children": "How likely are you to recommend SoundScribe to a friend?",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "39307634-0a5e-45cc-b53a-4af44f68c75b",

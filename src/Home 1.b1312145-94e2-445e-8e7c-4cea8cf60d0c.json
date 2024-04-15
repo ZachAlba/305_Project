@@ -131,7 +131,7 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Top Albulms",
+                "Text": "Top Albums",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
@@ -187,7 +187,7 @@
                 "ParentId": "b1312145-94e2-445e-8e7c-4cea8cf60d0c",
                 "position": "absolute",
                 "edgeOffsets": 71,
-                "children": "Top Albulms"
+                "children": "Top Albums"
             },
             "children": [],
             "id": "5ff6e67c-ac8c-4af9-936e-d0810ce1f930",
