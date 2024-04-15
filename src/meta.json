@@ -10,6 +10,17 @@
                             "translatedName": "Web API",
                             "isApi": true,
                             "reactType": "Web",
+                            "properties": {},
+                            "children": [],
+                            "id": "b51d0b55-e1c5-4ce2-ac54-7638f2e8a7bb",
+                            "thunkableVersion": 452,
+                            "name": "count"
+                        },
+                        {
+                            "type": "Web API",
+                            "translatedName": "Web API",
+                            "isApi": true,
+                            "reactType": "Web",
                             "properties": {
                                 "URL": ""
                             },
