@@ -800,7 +800,7 @@
                         },
                         "children": [
                             {
-                                "id": "da6ed66d-4f0e-4fd5-884a-839cf8b56216"
+                                "id": "b1312145-94e2-445e-8e7c-4cea8cf60d0c"
                             },
                             {
                                 "id": "42404a9f-9833-41cf-aef3-464b8991d7ca"
@@ -829,7 +829,7 @@
                         "id": "0b072a3c-de07-435a-b6f0-f94374bc8a22"
                     },
                     {
-                        "id": "b1312145-94e2-445e-8e7c-4cea8cf60d0c"
+                        "id": "da6ed66d-4f0e-4fd5-884a-839cf8b56216"
                     }
                 ]
             },
@@ -868,7 +868,10 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -914,7 +917,10 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -938,7 +944,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "1",
+            "totalCopy": "0",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
