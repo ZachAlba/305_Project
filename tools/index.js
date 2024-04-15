@@ -97,7 +97,7 @@ exports.sendFollowNotification = functions.database
       return null;
     });
 
-
+// catch all endpoint, depending on query returns various user data
 exports.getAllUsers = onRequest(async (req, res) => {
   try {
     const usernameOnly = req.query.usernameOnly === "true";
@@ -278,7 +278,7 @@ exports.getSpotifyData = onRequest(async (req, res) => {
   }
 });
 
-
+// get data from posts branch
 exports.getPosts = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
   try {
@@ -334,6 +334,7 @@ exports.getPosts = onRequest(async (req, res) => {
   }
 });
 
+// uses levenstein distance to find closest usernames
 exports.getCloseUsers = onRequest(async (req, res) => {
   try {
     const searchTerm = req.query.username;
