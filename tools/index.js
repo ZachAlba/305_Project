@@ -97,7 +97,7 @@ exports.sendFollowNotification = functions.database
       return null;
     });
 
-// catch all endpoint, depending on query returns various user data
+
 exports.getAllUsers = onRequest(async (req, res) => {
   try {
     const usernameOnly = req.query.usernameOnly === "true";
@@ -178,19 +178,21 @@ exports.getAllUsers = onRequest(async (req, res) => {
 });
 
 // Spotify API - WIP
-exports.getSpotifyData = onRequest(async (req, res) => {
+exports.getSpotifyToken = onRequest(async (req, res) => {
   try {
+    res.set("Access-Control-Allow-Origin", "*");  //OPEN CORS ~ bad but needed for web app ~ just thunkable thingz
     // Check if the request is authenticated
-    if (!req.user) {
-      return res.status(403).send('Unauthorized');
-    }
+    //if (!req.user) {
+      //logger.warn('Unauthorized');
+      //return res.status(403).send('Unauthorized');
+    //}
 
-    // res.set("Access-Control-Allow-Origin", "*");  OPEN CORS ~ bad but needed for web app ~ just thunkable thingz
-
+    logger.info("Fetching env variables");
     // Use Firebase environment variables to store client ID and secret
     const clientId = functions.config().spotify.client_id;
     const clientSecret = functions.config().spotify.client_secret;
 
+    logger.info('Prepping request');
     // Prepare request body
     const requestBody = querystring.stringify({
       grant_type: 'client_credentials',
@@ -206,6 +208,7 @@ exports.getSpotifyData = onRequest(async (req, res) => {
       }
     };
 
+    logger.info('Sending request');
     // get access token
     const tokenResponse = await new Promise((resolve, reject) => {
       const req = https.request('https://accounts.spotify.com/api/token', options, (res) => {
@@ -229,56 +232,16 @@ exports.getSpotifyData = onRequest(async (req, res) => {
     });
 
     const accessToken = tokenResponse.access_token;
-
-    // Spotify API endpoint URL
-    var spotifyUrl = 'https://api.spotify.com/v1/';
-
-    // Which endpoint to use
-    if (req.query.type === 'search') {
-      spotifyUrl += 'search';
-    } else if (req.query.type === 'albums') {
-      spotifyUrl += 'albums';
-    } else if (req.query.type === 'artists') {
-      spotifyUrl += 'artists';
-    } else if (req.query.type === 'tracks') {
-      spotifyUrl += 'tracks';
-    } else {
-      return res.status(400).send('Bad Request');
-    }
-
-    // Make a request to the Spotify API using the access token
-    const spotifyResponse = await new Promise((resolve, reject) => {
-      const req = https.get(spotifyUrl, {
-        headers: {
-          'Authorization': `Bearer ${accessToken}`
-        }
-      }, (spotifyRes) => {
-        let data = '';
-
-        spotifyRes.on('data', (chunk) => {
-          data += chunk;
-        });
-
-        spotifyRes.on('end', () => {
-          resolve(data);
-        });
-      });
-
-      req.on('error', (error) => {
-        reject(error);
-      });
-
-      req.end();
-    });
-
-    res.send(spotifyResponse);
+    logger.info('Access token:', accessToken);
+    res.status(200).json({ access_token: accessToken });
+   
   } catch (error) {
     console.error(error);
     res.status(500).send('Internal Server Error');
   }
 });
 
-// get data from posts branch
+
 exports.getPosts = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
   try {
@@ -334,7 +297,6 @@ exports.getPosts = onRequest(async (req, res) => {
   }
 });
 
-// uses levenstein distance to find closest usernames
 exports.getCloseUsers = onRequest(async (req, res) => {
   try {
     const searchTerm = req.query.username;
