@@ -13,11 +13,9 @@ admin.initializeApp();
 const storage = admin.storage(); // Access Firebase Storage
 
 
-// OPEN CORS ~ bad but needed for web app ~ just thunkable thingz
-// doesnt really matter for most of the functions but spotify makes me nervous
-
 // Apparently this broke and I don't know how or when sometime 26th?
 // I think its due to google cloud storage, saving actual photos to the bucket uses firestore
+// other option is when thunkable saves a new image, it doesn't always create a new url?
 exports.createThumbnail = functions.database
     .ref("/users/{userId}/picture")
 
@@ -179,8 +177,8 @@ exports.getAllUsers = onRequest(async (req, res) => {
 
 // Spotify API - WIP
 exports.getSpotifyToken = onRequest(async (req, res) => {
+  res.set("Access-Control-Allow-Origin", "*");  //OPEN CORS ~ bad but needed for web app ~ just thunkable thingz
   try {
-    res.set("Access-Control-Allow-Origin", "*");  //OPEN CORS ~ bad but needed for web app ~ just thunkable thingz
     // Check if the request is authenticated
     //if (!req.user) {
       //logger.warn('Unauthorized');
@@ -189,8 +187,9 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
 
     logger.info("Fetching env variables");
     // Use Firebase environment variables to store client ID and secret
-    const clientId = functions.config().spotify.client_id;
-    const clientSecret = functions.config().spotify.client_secret;
+    const clientId = process.env.CLIENT_ID;
+    logger.info('Client ID:', clientId);
+    const clientSecret = process.env.CLIENT_SECRET;
 
     logger.info('Prepping request');
     // Prepare request body
@@ -220,11 +219,13 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
 
         res.on('end', () => {
           resolve(JSON.parse(data));
+          logger.info('Response:', data);
         });
       });
 
       req.on('error', (error) => {
         reject(error);
+        logger.error('Error:', error);
       });
 
       req.write(requestBody);
@@ -241,9 +242,59 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
   }
 });
 
+exports.searchSpotify = onRequest(async (req, res) => {
+  res.set("Access-Control-Allow-Origin", "*");
+  try {
+    
+    const token = req.query.token;
+    const artist = req.query.artist;
+    logger.info('Token:', token);
+    logger.info('Artist:', artist);
+    
+    const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(artist)}&type=artist`;
+    const options = {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    };
+
+    const artistResponse = await new Promise((resolve, reject) => {
+      const req = https.request(url, options, (response) => {
+        let data = '';
+
+        response.on('data', (chunk) => {
+          data += chunk;
+        });
+
+        response.on('end', () => {
+          resolve(JSON.parse(data));
+          logger.info('Response:', data);
+        });
+      });
+
+      req.on('error', (error) => {
+        reject(error);
+        logger.error('Error:', error);
+      });
+
+      req.end();
+    });
+    const artistUrl = artistResponse.artists.items[0].external_urls.spotify;
+    logger.info('Artist URL:', artistUrl);
+    res.status(200).json({ artist_url: artistUrl });
+  }
+  catch (error) {
+    logger.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
 
 exports.getPosts = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
+  // if single
+  // get userID
+  // return posts of userID
   try {
     const userId = req.query.userId;
     if (!userId) {
