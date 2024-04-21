@@ -292,16 +292,25 @@ exports.searchSpotify = onRequest(async (req, res) => {
 
 exports.getPosts = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
-  // if single
-  // get userID
-  // return posts of userID
+
   try {
+    const single = req.query.single === "true";
     const userId = req.query.userId;
     if (!userId) {
       logger.info('UserID parameter is required');
       return res.status(400).send('UserID parameter is required');
     }
-    
+    if(single){
+      logger.info('Fetching only own posts for user:', userId);
+      const postsSnapshot = await admin.database().ref(`/posts/${userId}`).once('value');
+      const userPosts = postsSnapshot.val();
+      if (userPosts) {
+        // Filter out the counter post
+        const filteredPosts = Object.entries(userPosts).filter(([postId, post]) => postId !== 'counter');
+
+        return res.status(200).json(filteredPosts);
+      }
+    }
     logger.info('Fetching posts for user:', userId);
 
     // Retrieve the list of UserIDs that the specified user is following
