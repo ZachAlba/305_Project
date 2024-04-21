@@ -95,7 +95,7 @@ exports.sendFollowNotification = functions.database
       return null;
     });
 
-// catch all endpoint with a ton of query parameters, maybe not best practice
+
 exports.getAllUsers = onRequest(async (req, res) => {
   try {
     const usernameOnly = req.query.usernameOnly === "true";
@@ -231,7 +231,7 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
       req.write(requestBody);
       req.end();
     });
-    // return token
+
     const accessToken = tokenResponse.access_token;
     logger.info('Access token:', accessToken);
     res.status(200).json({ access_token: accessToken });
@@ -245,7 +245,7 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
 exports.searchSpotify = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
   try {
-    // using GET query parameters even tho we shouldn't because I can't figure out the thunkable POST block headers :3
+    
     const token = req.query.token;
     const artist = req.query.artist;
     logger.info('Token:', token);
@@ -296,23 +296,12 @@ exports.getPosts = onRequest(async (req, res) => {
   // get userID
   // return posts of userID
   try {
-    const single = req.query.single === "true";
     const userId = req.query.userId;
     if (!userId) {
       logger.info('UserID parameter is required');
       return res.status(400).send('UserID parameter is required');
     }
-    if(single){
-      logger.info('Fetching only own posts for user:', userId);
-      const postsSnapshot = await admin.database().ref(`/posts/${userId}`).once('value');
-      const userPosts = postsSnapshot.val();
-      if (userPosts) {
-        // Filter out the counter post
-        const filteredPosts = Object.entries(userPosts).filter(([postId, post]) => postId !== 'counter');
-
-        return res.status(200).json(filteredPosts);
-      }
-    }
+    
     logger.info('Fetching posts for user:', userId);
 
     // Retrieve the list of UserIDs that the specified user is following
