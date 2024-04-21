@@ -245,13 +245,16 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
 exports.searchSpotify = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
   try {
-    
+    // getting query parameters
     const token = req.query.token;
     const artist = req.query.artist;
     logger.info('Token:', token);
     logger.info('Artist:', artist);
     
+    // spotify endpoint (could change this dynamically with query parameters)
     const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(artist)}&type=artist`;
+
+    // setting up HTTP request
     const options = {
       method: 'GET',
       headers: {
@@ -259,6 +262,7 @@ exports.searchSpotify = onRequest(async (req, res) => {
       }
     };
 
+    // sending request
     const artistResponse = await new Promise((resolve, reject) => {
       const req = https.request(url, options, (response) => {
         let data = '';
@@ -280,7 +284,11 @@ exports.searchSpotify = onRequest(async (req, res) => {
 
       req.end();
     });
+
+    // parsing response
     const artistUrl = artistResponse.artists.items[0].external_urls.spotify;
+
+    // returning parsed response
     logger.info('Artist URL:', artistUrl);
     res.status(200).json({ artist_url: artistUrl });
   }
@@ -294,14 +302,20 @@ exports.getPosts = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
 
   try {
+    // set vars from query parameters
     const single = req.query.single === "true";
     const userId = req.query.userId;
+
+    // if there isn't a userId, return an error
     if (!userId) {
       logger.info('UserID parameter is required');
       return res.status(400).send('UserID parameter is required');
     }
+
+    // if single is true, only return the user's posts
     if(single){
       logger.info('Fetching only own posts for user:', userId);
+      // accessing RTDB
       const postsSnapshot = await admin.database().ref(`/posts/${userId}`).once('value');
       const userPosts = postsSnapshot.val();
       if (userPosts) {
@@ -311,12 +325,15 @@ exports.getPosts = onRequest(async (req, res) => {
         return res.status(200).json(filteredPosts);
       }
     }
+
+    // else, return the posts of the users that the specified user is following
     logger.info('Fetching posts for user:', userId);
 
-    // Retrieve the list of UserIDs that the specified user is following
+    // accessing RTDB to get the following object
     const followingSnapshot = await admin.database().ref(`/users/${userId}/following`).once('value');
     const following = followingSnapshot.val();
 
+    // if there is no following object, return an error ~~~ could return better message for user
     if (!following) {
       logger.info('User not found:', userId);
       return res.status(404).send('User not found');
@@ -324,7 +341,7 @@ exports.getPosts = onRequest(async (req, res) => {
     
     logger.info('Following:', following);
 
-    // Filter out the users that the specified user is following
+    // Filter out the users that the specified user is currently following (only true values)
     const followingUserIds = Object.keys(following).filter(followingUserId => following[followingUserId]);
 
     logger.info('Following User IDs:', followingUserIds);
@@ -347,7 +364,7 @@ exports.getPosts = onRequest(async (req, res) => {
         posts.push(...postsWithUserId);
       }
     }
-
+    // return the posts
     logger.info('Retrieved posts:', posts);
     
     return res.status(200).json(posts);
