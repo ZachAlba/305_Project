@@ -70,7 +70,7 @@ exports.sendFollowNotification = functions.database
         const followerId = context.params.followerId;
         logger.info(`Sending follow notification to user ${userId} 
             from follower ${followerId}`);
-        // Get the user's device token from the database ~ not sure how to get device tokens with thunkable
+        // Get the user's device token from the database
         const userRef = admin.database().ref(`/users/${userId}`);
         const userSnapshot = await userRef.once("value");
         const user = userSnapshot.val();
@@ -95,11 +95,9 @@ exports.sendFollowNotification = functions.database
       return null;
     });
 
-// catch all endpoint, kinda silly but it works
+
 exports.getAllUsers = onRequest(async (req, res) => {
   try {
-
-    // depending on the query parameters, return different data
     const usernameOnly = req.query.usernameOnly === "true";
     const thumbnail = req.query.thumbnail === "true";
     const idOnly = req.query.idOnly === "true";
@@ -107,8 +105,6 @@ exports.getAllUsers = onRequest(async (req, res) => {
     const following = req.query.following === "true";
     const userId = req.query.userId;
 
-
-    // access users branch of RTDB
     const usersRef = admin.database().ref("/users");
     const usersSnapshot = await usersRef.once("value");
     const users = usersSnapshot.val();
@@ -183,7 +179,7 @@ exports.getAllUsers = onRequest(async (req, res) => {
 exports.getSpotifyToken = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");  //OPEN CORS ~ bad but needed for web app ~ just thunkable thingz
   try {
-    // Check if the request is authenticated ~ unsure how to make this work with thunkable
+    // Check if the request is authenticated
     //if (!req.user) {
       //logger.warn('Unauthorized');
       //return res.status(403).send('Unauthorized');
@@ -202,7 +198,7 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
       client_id: clientId,
       client_secret: clientSecret
     });
-    // prepare request headers
+
     const options = {
       method: 'POST',
       headers: {
@@ -212,7 +208,7 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
     };
 
     logger.info('Sending request');
-    // send HTTP request ~ get access token
+    // get access token
     const tokenResponse = await new Promise((resolve, reject) => {
       const req = https.request('https://accounts.spotify.com/api/token', options, (res) => {
         let data = '';
@@ -236,7 +232,6 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
       req.end();
     });
 
-    // parse and return token
     const accessToken = tokenResponse.access_token;
     logger.info('Access token:', accessToken);
     res.status(200).json({ access_token: accessToken });
@@ -246,6 +241,66 @@ exports.getSpotifyToken = onRequest(async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+
+exports.returnNewReleases = onRequest(async (req, res) => {
+  res.set("Access-Control-Allow-Origin", "*");
+  try {
+    // get token
+    const token = req.query.token;
+    logger.info('Token:', token);
+
+    //spotift endpoint
+    const url = 'https://api.spotify.com/v1/browse/new-releases?limit=10';
+
+    //setup request
+    const options = {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    };
+    logger.info("sending request");
+    //send request
+    const newReleasesResponse = await new Promise((resolve, reject) => {
+      const req = https.request(url, options, (response) => {
+        let data = '';
+
+        response.on('data', (chunk) => {
+          data += chunk;
+        });
+
+        response.on('end', () => {
+          resolve(JSON.parse(data));
+          logger.info('Response:', data);
+        });
+      });
+
+      req.on('error', (error) => {
+        reject(error);
+        logger.error('Error:', error);
+      });
+
+      req.end();
+    });
+    logger.info("parsing response");
+    //parse response
+    const newReleases = newReleasesResponse.albums.items.map((album) => ({
+      name: album.name,
+      artist: album.artists[0].name,
+      image: album.images.length > 0 ? album.images[0].url : null, // Singular album cover image
+      url: album.external_urls.spotify
+    }));
+    logger.info('New Releases:', newReleases);
+    // Return the parsed data
+    return res.status(200).json(newReleases);
+
+  }
+catch (error) {
+    logger.info('Error:', error);
+    return res.status(500).send('Internal Server Error');
+  }
+});
+
 
 exports.searchSpotify = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
@@ -324,10 +379,14 @@ exports.getPosts = onRequest(async (req, res) => {
       const postsSnapshot = await admin.database().ref(`/posts/${userId}`).once('value');
       const userPosts = postsSnapshot.val();
       if (userPosts) {
-        // Filter out the counter post
-        const filteredPosts = Object.entries(userPosts).filter(([postId, post]) => postId !== 'counter');
-
-        return res.status(200).json(filteredPosts);
+      // Filter out the counter post
+      const filteredPosts = Object.entries(userPosts).filter(([postId, post]) => postId !== 'counter');
+      logger.info('Retrieved posts:', filteredPosts);
+      const postsList = filteredPosts.map(([postId, post]) => ({
+        postId,
+        ...post
+      }));
+      return res.status(200).json(postsList);
       }
     }
 
