@@ -11,6 +11,19 @@
                             "isApi": true,
                             "reactType": "Web",
                             "properties": {
+                                "URL": "https://returnnewreleases-gm3ubyc7sa-uc.a.run.app"
+                            },
+                            "children": [],
+                            "id": "5a2ce441-38b9-4626-a532-a1fb5f161d41",
+                            "thunkableVersion": 453,
+                            "name": "getNewReleases"
+                        },
+                        {
+                            "type": "Web API",
+                            "translatedName": "Web API",
+                            "isApi": true,
+                            "reactType": "Web",
+                            "properties": {
                                 "URL": "https://searchspotify-gm3ubyc7sa-uc.a.run.app",
                                 "Body": ""
                             },
@@ -943,7 +956,7 @@
                 "__typename": "ProjectSettings"
             },
             "hasAdmob": false,
-            "hasBluetoothLowEnergy": null,
+            "hasBluetoothLowEnergy": false,
             "hasPushNotification": false,
             "hasAssistant": null,
             "dataSourceLinks": [],
@@ -951,7 +964,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "0",
+            "totalCopy": "1",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
@@ -1053,12 +1066,17 @@
                 "9a137b2a-4be8-4597-b424-d7b21e4ddef1": {
                     "scope": "APP",
                     "name": "token",
-                    "screenId": "45515953-90de-437a-b15b-22648ff6db84"
+                    "screenId": "b1312145-94e2-445e-8e7c-4cea8cf60d0c"
                 },
-                "3ee5bdf6-7655-4778-9b99-ffb003819a2f": {
+                "38e25277-6629-4cff-9ecc-993390461b87": {
                     "scope": "APP",
-                    "name": "header",
-                    "screenId": "45515953-90de-437a-b15b-22648ff6db84"
+                    "name": "release list",
+                    "screenId": "b1312145-94e2-445e-8e7c-4cea8cf60d0c"
+                },
+                "6fe3cba5-c8d3-4b49-899e-8da9c6c164dc": {
+                    "scope": "APP",
+                    "name": "spotify link",
+                    "screenId": "b1312145-94e2-445e-8e7c-4cea8cf60d0c"
                 }
             },
             "defaultDesignerDevice": "PHONE",
