@@ -454,7 +454,8 @@ exports.searchSpotify = onRequest(async (req, res) => {
       name: artist.name,
       img: artist.images.length > 0 ? artist.images[0].url : null,
       }))
-      .sort((a, b) => b.popularity - a.popularity);
+      .sort((a, b) => b.popularity - a.popularity)
+      .slice(0, 9);
 
     // returning parsed response
     logger.info('Artists:', artists);
@@ -507,10 +508,11 @@ exports.getPosts = onRequest(async (req, res) => {
       if (postReplies) {
       // Filter out the counter post
       const filteredReplies = Object.entries(postReplies).filter(([replyId, reply]) => replyId !== 'counter');
-      logger.info('Retrieved replies:', filteredReplies);
       
-      
-      const replies = filteredReplies.map(([replyId, reply]) => reply);
+      const replies = filteredReplies.map(([replyId, reply]) => ({
+        reply: reply,
+      }));
+      logger.info('Retrieved replies:', replies);
       return res.status(200).json(replies);
       
       }
