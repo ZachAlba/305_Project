@@ -58,6 +58,54 @@
     },
     "children": [
         {
+            "type": "Loading Icon",
+            "translatedName": "Loading Icon",
+            "reactType": "ActivityIndicator",
+            "properties": {
+                "animating": true,
+                "color": "rgb(155,155,155)",
+                "size": 45,
+                "hidesWhenStopped": true,
+                "Height": 50,
+                "Width": 50,
+                "Visible": true,
+                "X": 160,
+                "Y": 215,
+                "RelativeX": 160,
+                "RelativeY": 215,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "37.733333333333334%",
+                    "top": "30.64468132144865%",
+                    "display": "flex"
+                },
+                "ParentId": "761a6094-ff76-4f15-9dfb-49a189ea66c0",
+                "position": "absolute",
+                "edgeOffsets": 215
+            },
+            "children": [],
+            "id": "536a0a63-2083-4cda-8583-7c639d8cfa89",
+            "thunkableVersion": 454,
+            "name": "Loading_Icon2"
+        },
+        {
             "type": "List Viewer",
             "translatedName": "Simple List",
             "reactType": "ListView",
