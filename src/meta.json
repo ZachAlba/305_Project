@@ -1200,7 +1200,7 @@
                     "scope": "APP",
                     "name": "cloudLocation",
                     "screenId": "bc2e3cff-0e57-404b-bf95-fd1b0946dbcc"
-
+                },
                 "e86d247f-7a7b-4ef1-88fd-304f616ce0a7": {
                     "scope": "APP",
                     "name": "ArtistID",
