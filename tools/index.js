@@ -301,6 +301,107 @@ catch (error) {
   }
 });
 
+exports.getArtistData = onRequest(async (req, res) => {
+  res.set("Access-Control-Allow-Origin", "*");
+  try {
+    // get token
+    const token = req.query.token;
+    const artistId = req.query.artistId;
+    logger.info('Token:', token);
+    logger.info('Artist ID:', artistId);
+
+    // spotify endpoint
+    const topTracksEndpoint = `https://api.spotify.com/v1/artists/${artistId}/top-tracks`;
+    const artistEndpoint = `https://api.spotify.com/v1/artists/${artistId}`;
+    const albumsEndpoint = `https://api.spotify.com/v1/artists/${artistId}/albums`;
+    // setup request
+    const options = {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    };
+
+    // send request
+    const albumsResponse = await new Promise((resolve, reject) => {
+      const req = https.request(albumsEndpoint, options, (response) => {
+        let data = '';
+
+        response.on('data', (chunk) => {
+          data += chunk;
+        });
+
+        response.on('end', () => {
+          resolve(JSON.parse(data));
+          logger.info('Response:', data);
+        });
+      });
+
+      req.on('error', (error) => {
+        reject(error);
+        logger.error('Error:', error);
+      });
+
+      req.end();
+    });
+
+    const artistResponse = await new Promise((resolve, reject) => {
+      const req = https.request(artistEndpoint, options, (response) => {
+        let data = '';
+
+        response.on('data', (chunk) => {
+          data += chunk;
+        });
+
+        response.on('end', () => {
+          resolve(JSON.parse(data));
+          logger.info('Response:', data);
+        });
+      });
+      
+      req.on('error', (error) => {
+        reject(error);
+        logger.error('Error:', error);
+      });
+
+      req.end();
+    });
+
+    // parse response
+    const albums = albumsResponse.items
+      .filter((album) => album.album_type === "album")
+      .sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
+      .slice(0, 10)
+      .map((album) => ({
+      albumName: album.name,
+      releaseDate: album.release_date,
+      image: album.images.length > 0 ? album.images[0].url : null,
+      url: album.external_urls.spotify,
+      popularity: album.popularity
+      }));
+
+    const artist = {
+      name: artistResponse.name,
+      image: artistResponse.images.length > 0 ? artistResponse.images[0].url : null,
+
+    };
+
+    // return parsed response
+    logger.info('Top Tracks:', albums);
+    logger.info('Artist:', artist);
+    const combinedResponse = {
+      albums: albums.sort((a, b) => b.popularity - a.popularity),
+      artist: artist
+    };
+    logger.info('Combined Response:', combinedResponse);
+    res.status(200).json(combinedResponse);
+  }
+  catch (error) {
+    logger.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
 
 exports.searchSpotify = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
@@ -346,11 +447,18 @@ exports.searchSpotify = onRequest(async (req, res) => {
     });
 
     // parsing response
-    const artistUrl = artistResponse.artists.items[0].external_urls.spotify;
+    const artists = artistResponse.artists.items
+      .filter((artist) => artist.popularity > 20)
+      .map((artist) => ({
+      id: artist.id,
+      name: artist.name,
+      img: artist.images.length > 0 ? artist.images[0].url : null,
+      }))
+      .sort((a, b) => b.popularity - a.popularity);
 
     // returning parsed response
-    logger.info('Artist URL:', artistUrl);
-    res.status(200).json({ artist_url: artistUrl });
+    logger.info('Artists:', artists);
+    res.status(200).json(artists);
   }
   catch (error) {
     logger.error(error);
@@ -365,9 +473,11 @@ exports.getPosts = onRequest(async (req, res) => {
     // set vars from query parameters
     const single = req.query.single === "true";
     const userId = req.query.userId;
+    const replies = req.query.replies === "true";
+    const postId = req.query.postId;
 
     // if there isn't a userId, return an error
-    if (!userId) {
+    if (!userId && !replies) {
       logger.info('UserID parameter is required');
       return res.status(400).send('UserID parameter is required');
     }
@@ -387,6 +497,22 @@ exports.getPosts = onRequest(async (req, res) => {
         ...post
       }));
       return res.status(200).json(postsList);
+      }
+    }
+    else if(replies){
+      logger.info('Fetching replies for post:', postId);
+      // accessing RTDB
+      const repliesSnapshot = await admin.database().ref(`/posts/${userId}/${postId}/replies`).once('value');
+      const postReplies = repliesSnapshot.val();
+      if (postReplies) {
+      // Filter out the counter post
+      const filteredReplies = Object.entries(postReplies).filter(([replyId, reply]) => replyId !== 'counter');
+      logger.info('Retrieved replies:', filteredReplies);
+      
+      
+      const replies = filteredReplies.map(([replyId, reply]) => reply);
+      return res.status(200).json(replies);
+      
       }
     }
 
