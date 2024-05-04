@@ -75,9 +75,9 @@
                 "Width": 311,
                 "Visible": true,
                 "X": 32,
-                "Y": 592,
+                "Y": 561,
                 "RelativeX": 32,
-                "RelativeY": 592,
+                "RelativeY": 561,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -176,13 +176,13 @@
                 "LineHeight": 1,
                 "Color": "rgba(217, 220, 214, 1)",
                 "TextAlign": "center",
-                "Height": 45,
+                "Height": 35,
                 "Width": 311,
                 "Visible": true,
                 "X": 32,
-                "Y": 529,
+                "Y": 512,
                 "RelativeX": 32,
-                "RelativeY": 529,
+                "RelativeY": 512,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(217, 220, 214, 1)",
@@ -238,7 +238,7 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Label",
+                "Text": "",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
@@ -294,7 +294,7 @@
                 "ParentId": "b1312145-94e2-445e-8e7c-4cea8cf60d0c",
                 "position": "absolute",
                 "edgeOffsets": 436.00000000000006,
-                "children": "Label"
+                "children": ""
             },
             "children": [],
             "id": "b732df65-33f7-4187-b973-aa34a713f613",
@@ -307,7 +307,7 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Label",
+                "Text": "",
                 "FontSize": 18,
                 "Font": "",
                 "CustomFont": "",
@@ -318,9 +318,9 @@
                 "Width": 311,
                 "Visible": true,
                 "X": 34,
-                "Y": 483,
+                "Y": 473,
                 "RelativeX": 34,
-                "RelativeY": 483,
+                "RelativeY": 473,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(217, 220, 214, 1)",
@@ -363,7 +363,7 @@
                 "ParentId": "b1312145-94e2-445e-8e7c-4cea8cf60d0c",
                 "position": "absolute",
                 "edgeOffsets": 483.99999999999994,
-                "children": "Label"
+                "children": ""
             },
             "children": [],
             "id": "577ca50e-ad52-4f8b-8599-1be1f3cf2987",
