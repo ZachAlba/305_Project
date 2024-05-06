@@ -174,10 +174,10 @@
                 "Height": 47,
                 "Width": 313,
                 "Visible": true,
-                "X": 30,
-                "Y": 340,
-                "RelativeX": 30,
-                "RelativeY": 340,
+                "X": 31,
+                "Y": 366,
+                "RelativeX": 31,
+                "RelativeY": 366,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(220, 217, 214, 1)",
@@ -220,7 +220,7 @@
                 },
                 "ParentId": "761a6094-ff76-4f15-9dfb-49a189ea66c0",
                 "position": "absolute",
-                "edgeOffsets": 340,
+                "edgeOffsets": 366,
                 "children": "Albums"
             },
             "children": [],
@@ -287,13 +287,13 @@
             "translatedName": "Image",
             "properties": {
                 "resizeMode": "stretch",
-                "Height": 187,
-                "Width": 310,
+                "Height": 241,
+                "Width": 313,
                 "Visible": true,
-                "X": 31.9921875,
-                "Y": 146.9921875,
-                "RelativeX": 31.9921875,
-                "RelativeY": 146.9921875,
+                "X": 31,
+                "Y": 114,
+                "RelativeX": 31,
+                "RelativeY": 114,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -320,7 +320,7 @@
                 "capInsets": {},
                 "ParentId": "761a6094-ff76-4f15-9dfb-49a189ea66c0",
                 "position": "absolute",
-                "edgeOffsets": 146.9921875
+                "edgeOffsets": 114
             },
             "children": [],
             "id": "0ae379cf-60c4-4577-935d-3606864fa68a",
@@ -342,9 +342,9 @@
                 "Width": 311,
                 "Visible": true,
                 "X": 32,
-                "Y": 91,
+                "Y": 61,
                 "RelativeX": 32,
-                "RelativeY": 91,
+                "RelativeY": 61,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(220, 217, 214, 1)",
@@ -386,7 +386,7 @@
                 },
                 "ParentId": "761a6094-ff76-4f15-9dfb-49a189ea66c0",
                 "position": "absolute",
-                "edgeOffsets": 91,
+                "edgeOffsets": 61.999999999999986,
                 "children": "",
                 "FontWeight": "bold"
             },
