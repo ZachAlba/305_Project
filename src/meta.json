@@ -1037,7 +1037,7 @@
                 "__typename": "ProjectSettings"
             },
             "hasAdmob": false,
-            "hasBluetoothLowEnergy": false,
+            "hasBluetoothLowEnergy": null,
             "hasPushNotification": false,
             "hasAssistant": null,
             "dataSourceLinks": [],
@@ -1045,7 +1045,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "1",
+            "totalCopy": "0",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
