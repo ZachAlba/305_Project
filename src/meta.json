@@ -945,9 +945,9 @@
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
                 "notchAreaColor": null,
-                "androidVersionName": "6",
-                "androidVersionCode": 6,
-                "iosVersionNumber": "2",
+                "androidVersionName": "7",
+                "androidVersionCode": 7,
+                "iosVersionNumber": "3",
                 "iosBuildNumber": "1",
                 "firebaseAPIKey": "AIzaSyBeaNjbP0eTB3N4FQ-taOq67gLHo_Fi0HU",
                 "firebaseDatabaseURL": "https://project-4d159-default-rtdb.firebaseio.com",
@@ -969,7 +969,10 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -991,9 +994,9 @@
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
                 "notchAreaColor": null,
-                "androidVersionName": "6",
-                "androidVersionCode": 6,
-                "iosVersionNumber": "2",
+                "androidVersionName": "7",
+                "androidVersionCode": 7,
+                "iosVersionNumber": "3",
                 "iosBuildNumber": "1",
                 "firebaseAPIKey": "AIzaSyBeaNjbP0eTB3N4FQ-taOq67gLHo_Fi0HU",
                 "firebaseDatabaseURL": "https://project-4d159-default-rtdb.firebaseio.com",
@@ -1015,7 +1018,10 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,

@@ -191,7 +191,7 @@
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(255, 255, 255, 1)",
+                "Color": "rgba(217, 220, 214, 1)",
                 "Height": 37,
                 "Width": 57,
                 "Visible": true,
@@ -201,7 +201,7 @@
                 "RelativeY": 270,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "color": "rgba(255, 255, 255, 1)",
+                    "color": "rgba(217, 220, 214, 1)",
                     "fontSize": 18,
                     "fontStyle": "normal",
                     "textShadowOffset": {},
@@ -235,12 +235,14 @@
                     "left": "29.2%",
                     "top": "33.928034151869376%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                 "position": "absolute",
                 "edgeOffsets": 270.9921875,
-                "children": ""
+                "children": "",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "aaf988a2-8cf8-4ee8-985c-94328413138c",
@@ -258,7 +260,7 @@
                 "Font": "",
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(255, 255, 255, 1)",
+                "Color": "rgba(217, 220, 214, 1)",
                 "Height": 39,
                 "Width": 52,
                 "Visible": true,
@@ -268,7 +270,7 @@
                 "RelativeY": 201.9921875,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "color": "rgba(255, 255, 255, 1)",
+                    "color": "rgba(217, 220, 214, 1)",
                     "fontSize": 18,
                     "fontStyle": "normal",
                     "textShadowOffset": {},
@@ -302,12 +304,14 @@
                     "left": "29.2%",
                     "top": "33.928034151869376%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "fontWeight": "bold"
                 },
                 "ParentId": "332c86ab-99f6-4c5d-8936-d0ce4e08bb9c",
                 "position": "absolute",
                 "edgeOffsets": 201.9921875,
-                "children": ""
+                "children": "",
+                "FontWeight": "bold"
             },
             "children": [],
             "id": "333ade30-8f79-4eed-bff2-93f72989e972",
