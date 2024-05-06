@@ -175,15 +175,10 @@ exports.getAllUsers = onRequest(async (req, res) => {
   }
 });
 
-// Spotify API - WIP
+// Spotify API
 exports.getSpotifyToken = onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");  //OPEN CORS ~ bad but needed for web app ~ just thunkable thingz
   try {
-    // Check if the request is authenticated
-    //if (!req.user) {
-      //logger.warn('Unauthorized');
-      //return res.status(403).send('Unauthorized');
-    //}
 
     logger.info("Fetching env variables");
     // Use Firebase environment variables to store client ID and secret
