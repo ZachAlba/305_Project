@@ -11,6 +11,7 @@ Requires internet connection.
 
 ## Installing
 Download SoundScribe from Google Play.
+Internal Testers can download from [this link.](https://play.google.com/apps/internaltest/4701695132552293830)
 No modifications to files/folders are necessary.
 
 ## Executing program
