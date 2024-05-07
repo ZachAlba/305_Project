@@ -9,6 +9,6 @@ Discover, track, and share your musical journey. SoundScribe brings your album e
 - Ratings, Reviews, Rankings
 
 
-[SoundScribe Lean Canvas](https://docs.google.com/presentation/d/1hJeKVTbiGAahuwC5vln8izgNkc_xfoyxhjrR7yiBr-s/edit?usp=sharing)
+[SoundScribe Lean Canvas](https://docs.google.com/presentation/d/1n_bAOreVr9zzXNRgsjZdQg4N46Zu2GjYBsJhzwVmBwo/edit?usp=sharing)
 
 [Lean Canvas](https://www.leanfoundry.com/tools/lean-canvas)
