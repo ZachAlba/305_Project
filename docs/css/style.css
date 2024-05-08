@@ -53,6 +53,8 @@ footer{
     width: 50%;
     text-align: center;
 }
+
+/* new lines */
 .step {
     display: flex;
     align-items: center; /* Vertically center align items */
