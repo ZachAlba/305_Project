@@ -53,6 +53,15 @@ footer{
     width: 50%;
     text-align: center;
 }
+.step {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .step-text {
+    margin-left: 20px; /* Adjust this value as needed to add space between the image and text */
+  }
+    
 
 /* responsive styles */
 
