@@ -106,4 +106,10 @@ footer{
     width: 100%;
     position: absolute;
 }
+
+.logo-small {
+    max-width: 100px; /* You can adjust the width as needed */
+    height: auto;
+  }
+  
   
