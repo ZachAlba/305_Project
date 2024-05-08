@@ -54,6 +54,15 @@ footer{
     text-align: center;
 }
 
+.step {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .step-text {
+    margin-left: 20px; /* Adjust this value as needed to add space between the image and text */
+  }
+
 /* responsive styles */
 
 /* when screen small */
@@ -108,7 +117,7 @@ footer{
 }
 
 .logo-small {
-    max-width: 100px; /* You can adjust the width as needed */
+    max-width: 200px; /* You can adjust the width as needed */
     height: auto;
   }
   
